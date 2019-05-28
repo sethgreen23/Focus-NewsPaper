@@ -1,3 +1,4 @@
+/*** Custom CSS Admin  ***/
 jQuery(document).ready( function($){
 	
 	var updateCSS = function(){ $("#foucs_css").val( editor.getSession().getValue() ); }
