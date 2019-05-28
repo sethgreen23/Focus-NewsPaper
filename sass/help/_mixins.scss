@@ -1,0 +1,77 @@
+//- Prefix CSS3 Properties
+//-  Accept Arguments => Property Name, Property Values, Vendor Prefixes or no
+//-  Example: 
+//-         @include prefixer(transition, all .3s ease, webkit moz o)
+//-          (transition, all .3s ease) and wright (webkit moz o sm) in mixin 
+@mixin prefixer($property, $value, $prefixes: (webkit moz o)) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+  };
+
+//-  Overlay Mixin
+//-  Accept Argument => Color
+//-  Example: 
+//-         @include Overlay(black, .5); 
+@mixin Overlay($color,$opacity) {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 99;
+  display: none;
+  cursor: e-resize;
+  background-color: rgba($color,$opacity)
+};
+ @mixin animate ( $attr, $time){
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+@mixin transform( $val ) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+
+//-   Media Query
+//-  Accept Arguments
+//-  Example:
+//-        @include MediaQuery (l-desktop) { content }
+@mixin MediaQuery($screen-size){
+  //- small devices
+  @if $screen-size == phone {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+  //- Medium devices
+  @if $screen-size == tablet {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  //- Large device
+  @if $screen-size == desktop {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  //- Big Large device
+  @if $screen-size == lg-desktop {
+    @media (min-width: 1200px) and (max-width: 1365.98px) {
+      @content;
+    }
+  }
+  //- Big xLarge device
+  @if $screen-size == xlg-desktop {
+    @media (min-width: 1366px) {
+      @content;
+    }
+  }
+};
