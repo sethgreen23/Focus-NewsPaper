@@ -1,4 +1,4 @@
-/** global $, jQuery, console, alert, prompt **/
+/*global $, jQuery, console, alert, prompt */
 jQuery(document).ready( function($){
 	
 	var mediaUploader;

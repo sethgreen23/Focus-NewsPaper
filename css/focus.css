@@ -1,0 +1,116 @@
+/*
+    *** Theme Name  :  Foucs NewsPaper Theme
+    *** Theme URL   :  https://www.fb.com/Hesham.H.Adel
+    *** Author	    :  Hesham Adel
+    *** Author URL	:  https://www.fb.com/Hesham.H.Adel
+    *** Description	:  Foucs NewsPaper The Perfect Theme For Your Magazine. Beautiful and Awesome in evry resolution.  user-friendly and SEO-friendly theme, There is a ton of ad space, you can use the header widgets to place ads banners and adsense in case you need to earn money as an affiliate - No matter if it is image ads advertisment or video advertising, all ad networks work such as Google DFP Ads, adsense and more. Our theme is made for the search engines, so you can easily beat the other bloggers and newspapers in Google with our fast and SEO optimized theme.The theme uses simple, clean flat design, With Multiple Custom Options in The Administration Panel To Make This Theme Your Definitive ally for your Daily Post.
+    *** Version		:  1.0.0
+    *** Tags		: foucs, newspaper, magazine, custom owner options,home pages, sidebar, blog, responsive, icon font, google font, clean, sass, fontawesome, normalize, owl.carousel, bootstrap.
+    *** Text Domain : foucs_newspaper
+*/
+/*
+	@package foucs_newspaper
+*/
+*, body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*  Prefix Box-sizing  */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Prefix Background-size  */
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
+  background-position: center center;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+.background-image {
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+/*** START FOUCS NEWSPAPER STYLE ***/
+/*** START Header ***/
+.header-container .foucs-logo {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  float: left;
+}
+.header-container .foucs-logo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.header-container .foucs-logo .desc-site {
+  position: relative;
+  bottom: 4.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222f3e;
+}
+.header-container .foucs-ads {
+  position: relative;
+  display: inline-block;
+  float: right;
+  top: 8.5em;
+  width: 728px;
+  height: 90px;
+  -webkit-border: 1px solid #222f3e;
+  -moz-border: 1px solid #222f3e;
+  -o-border: 1px solid #222f3e;
+  border: 1px solid #222f3e;
+}
+.header-container .foucs-ads img {
+  width: 100%;
+  height: 100%;
+}
+
+/*** End Header ***/
+/*** END FOUCS NEWSPAPER STYLE ***/
+
+/*# sourceMappingURL=focus.css.map */

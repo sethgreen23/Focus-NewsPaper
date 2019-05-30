@@ -1,4 +1,4 @@
-<h1>Foucs Newspaper Admin Info</h1>
+<h1>Foucs Newspaper Owner Info</h1>
 <?php settings_errors(); ?>
 
 <?php 

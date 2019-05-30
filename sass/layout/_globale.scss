@@ -1,0 +1,27 @@
+*,body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*  Prefix Box-sizing  */
+    @include prefixer(box-sizing,border-box);
+    /* Prefix Background-size  */
+    @include prefixer(background-position, center center);
+    @include prefixer(background-size, cover);
+    @include prefixer(background-repeat, no-repeat);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+img {
+    @include prefixer(background-size,cover);
+    @include prefixer(background-position, center center);
+    @include prefixer(background-repeat, no-repeat);
+}
+.background-image {
+    @include prefixer(background-position, center center);
+    @include prefixer(background-size, cover);
+    @include prefixer(background-repeat, no-repeat);
+}

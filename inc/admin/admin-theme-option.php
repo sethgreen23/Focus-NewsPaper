@@ -20,10 +20,15 @@ if( !empty( $options ) ){
 	add_theme_support('post-formats', $output );
 }
 
-$header = get_option( 'custom_logo' );
-if( @$header == 1 ){
+$logo = get_option( 'custom_logo' );
+if( @$logo == 1 ){
 	// Add Featur Customize Logo
-    add_theme_support( 'custom-logo' );
+    function foucs_add_logo() {
+	
+		add_theme_support( 'custom-logo');
+	
+	}
+	add_action( 'after_setup_theme', 'foucs_add_logo' );
 }
 
 $background = get_option( 'custom_background' );

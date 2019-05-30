@@ -46,7 +46,7 @@ function foucs_newspaper_add_submenu(){
     add_submenu_page( 
         $name_page_slug,
         'Foucs Newspaper Admin Info', 
-        'Admin Info', // Sub Menu Title
+        'Owner Info', // Sub Menu Title
         'manage_options', 
         $name_page_slug, // Sulg Name Page
         'foucs_create_admin_info_page', // Name Function To Called To Output The Content Page
@@ -116,7 +116,7 @@ function foucs_newspaper_custom_settings() {
 
     // Add Admin Section
     $admin_sec_name = 'foucs-newspaper-admin-info';
-    add_settings_section($admin_sec_name,'ADMIN INFO','foucs_admin_info_calback', $page_admin_name);
+    add_settings_section($admin_sec_name,'Owner Info','foucs_admin_info_calback', $page_admin_name);
 
     // Add Admin fild
     add_settings_field('foucs-newspaper-admin-picture', 'Picture', 'foucs_admin_picture_callback', $page_admin_name, $admin_sec_name);
@@ -173,7 +173,7 @@ function foucs_create_admin_info_page () {
 }
 // Function Callback Section
 function foucs_admin_info_calback () {
-    echo 'Customize Admin Information';
+    echo 'Customize Owner Information';
 }
 
 // ALL Function Admin Info Call Back
