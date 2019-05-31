@@ -1,0 +1,266 @@
+/*** START SLIDER ***/
+
+/*** START UPPER-SLIDER ***/
+
+.silder-container {
+    .upper-silder-body {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 0.3em;
+        .upper-silder {
+            width: 100%;
+            height: 100%;
+            .item {
+                .post-img-upper {
+                    img {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .upper-slider-heading {
+                    position: absolute;
+                    overflow: hidden;
+                    width: 100%;
+                    top: 14.6em;
+                    z-index: 999;
+                    margin-left: 10px;
+                    @include prefixer (transition, all 0.3s);
+                    &:hover {
+                        top: 12.6em;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                    .upper-slider-cat {
+                        display: inline-block;
+                        background: $primary_color;
+                        padding: 3px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                        @include prefixer (border-radius, 5px);
+                        @include prefixer (transition, all 0.3s);
+                        a {
+                            text-decoration: none;
+                            color: $secondary_color;
+                            font-family: $second-font ;
+                            font-weight: 700;
+                            font-size: 15px;
+                            @include prefixer (transition, all 0.3s);
+                        }
+                        span {
+                            color: $icon_slid_color;
+                            margin-left: 2px;
+                            margin-right: 3px;
+                        }
+                        &:hover {
+                            background: $primary_color;
+                            a {
+                                color: $white_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                    .upper-slider-title {
+                        a {
+                            text-decoration: none;
+                        }
+                        .post-title {
+                            color: $white_color;
+                            font-family: $second-font;
+                            font-size: 22px;
+                            font-weight: 700;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                    .post-author,
+                    .post-view,
+                    .post-comment {
+                        display: inline-block;
+                        color: $white_color;
+                        margin-right: 6px;
+                        font-size: 15px;
+                        font-family: $main-font ;
+                        font-weight: 700;
+                        i {
+                            margin-right: 3px;
+                            color: $icon_slid_color;
+                        }
+                    }
+                    .post-view {
+                        i {
+                            margin-right: 0;
+                            color: $icon_slid_view;
+                        }
+                    }
+                    .post-author,
+                    .post-comment {
+                        a {
+                            text-decoration: none;
+                            color: $white_color;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*** END UPPER-SLIDER ***/
+
+
+/*** START DOWN-SLIDER ***/
+
+.silder-container {
+    .down-silder-body {
+        width: 100%;
+        height: 215px;
+        overflow: hidden;
+        margin-bottom: 0.3em;
+        .down-silder {
+            width: 100%;
+            height: 100%;
+            .item {
+                .post-img-down{
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .down-slider-heading {
+                    position: absolute;
+                    overflow: hidden;
+                    width: 100%;
+                    top: 9.5em;
+                    z-index: 999;
+                    margin-left: 10px;
+                    @include prefixer (transition, all 0.3s);
+                    &:hover {
+                        top: 8em;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                    .down-slider-cat {
+                        display: inline-block;
+                        background: $primary_color;
+                        padding: 3px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                        @include prefixer (border-radius, 5px);
+                        @include prefixer (transition, all 0.3s);
+                        a {
+                            text-decoration: none;
+                            color: $secondary_color;
+                            font-family: $second-font ;
+                            font-weight: 700;
+                            font-size: 15px;
+                            @include prefixer (transition, all 0.3s);
+                        }
+                        span {
+                            color: $icon_slid_color;
+                            margin-left: 2px;
+                            margin-right: 3px;
+                        }
+                        &:hover {
+                            background: $primary_color;
+                            a {
+                                color: $white_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                    .down-slider-title {
+                        a {
+                            text-decoration: none;
+                        }
+                        .post-title {
+                            color: $white_color;
+                            font-family: $second-font;
+                            font-size: 16px;
+                            font-weight: 700;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                    .post-author,
+                    .post-view {
+                        display: inline-block;
+                        color: $white_color;
+                        margin-right: 6px;
+                        font-size: 15px;
+                        font-family: $main-font ;
+                        font-weight: 700;
+                        i {
+                            margin-right: 3px;
+                            color: $icon_slid_color;
+                        }
+                    }
+                    .post-view {
+                        i {
+                            margin-right: 0;
+                            color: $icon_slid_view;
+                        }
+                    }
+                    .post-author{
+                        a {
+                            text-decoration: none;
+                            color: $white_color;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.silder-container {
+    .arrow-prev,
+    .arrow-next {
+        position: absolute;
+        top: 0.5em;
+        @include prefixer(border, none);
+        background: none;
+        cursor: pointer;
+        left: 78em;
+        i {
+            font-size: 3rem;
+            color: $primary_color;
+            background-color: $white_color;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            opacity: 0.5;
+            @include prefixer(border-radius, 10px);
+            &:hover {
+                color: $primary_color ;
+                background-color: $secondary_color;
+                opacity: 1;
+            }
+        }
+    }
+    .arrow-next {
+        margin-left: 2.5em;
+    }
+}
+/*** END DOWN-SLIDER ***/
+
+/*** END SLIDER ***/

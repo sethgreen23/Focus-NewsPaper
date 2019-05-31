@@ -1,0 +1,27 @@
+/*** START ARTICAL POST ***/
+
+/** Start Old Post Block ***/
+.artical-container {
+    .artical-body {
+        .old-post-body {
+            .artical-name {
+                @include prefixer(border-bottom, 2px solid $old_post_color);
+                .old-post {
+                    background: $old_post_color;
+                    padding: 2px;
+                    color: $white-color;
+                    font-size: 17px;
+                    font-family: $main-font;
+                }
+            }
+            .old-one,
+            .all-old {
+                display: contents;
+            }
+        }
+    }
+}
+
+/** End Old Post Block ***/
+
+/*** END ARTICAL POST ***/

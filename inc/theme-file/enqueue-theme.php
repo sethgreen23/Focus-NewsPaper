@@ -6,9 +6,7 @@
         FRONT-END ENQUEUE FUNCTIONS
     ==================================
 */
-
-// Include Bootstrap Class NavWalker
-require_once('wp-bootstrap-navwalker.php');
+    
 
 /*
     *** function to add my custom style
@@ -21,6 +19,8 @@ function focus_styles_files() {
     wp_enqueue_style('fontawesome-css', get_template_directory_uri() . '/css/inc/fontawesome-all.min.css');
     // Add Normalize [CSS] File
     wp_enqueue_style('normalize-css', get_template_directory_uri() . '/css/inc/normalize.css');
+    // Add slick [CSS] File
+    wp_enqueue_style('slick-css', get_template_directory_uri() . '/css/inc/slick.css');
     // Add owl carousel [CSS] File
     wp_enqueue_style('owl-css', get_template_directory_uri() . '/css/inc/owl.carousel.min.css');
     // Add My Style
@@ -42,7 +42,9 @@ function foucs_js_files() {
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/inc/bootstrap.min.js', array(), false, true);
         // Add Nicescroll Script
     wp_enqueue_script('nicescroll-js', get_template_directory_uri() . '/js/inc/jquery.nicescroll.min.js', array(), false, true);
-        // Add Slick Script
+    // Add Slick Script
+    wp_enqueue_script('owl-js', get_template_directory_uri() . '/js/inc/slick.min.js', array(), false, true);
+        // Add owl carousel Script
     wp_enqueue_script('owl-js', get_template_directory_uri() . '/js/inc/owl.carousel.min.js', array(), false, true);
         // Add My Script
     wp_enqueue_script('anubis-js', get_template_directory_uri() . '/js/foucs.js', array(), false, true);

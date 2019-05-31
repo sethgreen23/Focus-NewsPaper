@@ -30,22 +30,52 @@
     </head>
     <!-- Start Body -->
     <body <?php body_class(); ?>>
-        <!-- Start container-fluid -->
+        <!-- Start Uppernav  -->
+        <nav class="navbar navbar-expand-lg upper-nav">
+            <div class="navbar-brand">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="date"><?php echo date('F j, Y'); ?></span>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <?php foucs_nav_custom_upper_menu() ?>
+            </div>
+        </nav>
+        <!-- End Uppernav  -->
+        <!-- Start container-fluid Header  -->
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <!-- Start Header Logo  -->
+                    <div class="col-6">
                         <div class="header-container background-image">
                             <div class="foucs-logo">
                                 <?php the_custom_logo();?>
                                 <h5 class="desc-site text-capitalize text-center"><?php bloginfo( 'description' ); ?></h5>
                             </div><!-- foucs-logo -->
-                            <div class="foucs-ads">
-                                <a href="<?php esc_url(home_url('/')) ?>">
-                                    <img src="<?php echo get_template_directory_uri() . '/image/foucs2.png' ?>" alt="Foucs News Paper Theme ads">
-                                </a>
-                            </div><!-- foucs-ads -->
-                        </div><!-- header-container -->
-                    </div><!-- End col-12  -->
+                        </div>
+                    </div>
+                    <!-- End Header Logo  -->
+                    <!-- Start ADS block  -->
+                    <div class="col-6">
+                        <div class="foucs-ads">
+                            <a href="<?php esc_url(home_url('/')) ?>">
+                                <img src="<?php echo get_template_directory_uri() . '/image/foucs2.png' ?>" alt="Foucs News Paper Theme ads">
+                            </a>
+                        </div><!-- foucs-ads -->
+                    </div><!-- End Start ADS block  -->
                 </div><!-- End row -->
             </div>
-        <!-- End container-fluid -->
+        <!-- End container-fluid Header  -->
+        <!-- Start Theme nav  -->
+        <nav class="navbar navbar-expand-lg second-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <?php foucs_nav_custom_theme_menu() ?>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+        <!-- End Theme nav  -->

@@ -2,7 +2,12 @@
 $primary_color 					: #222f3e;
 $secondary_color				: #ff9900;
 $white-color                    : #ffffff;
-
+$overlay-color                  : #2828281f;
+$icon_slid_color                : #9b9797; // and span Category
+$icon_slid_view                 : #ff0000;
 //- Font Family
-$main-font             : 'Lato', sans-serif; 
-$second-font           : 'Oswald', sans-serif; 
+$main-font                      : 'Lato', sans-serif; 
+$second-font                    : 'Oswald', sans-serif; // Slider Post Title
+
+//- Articals Block Color
+$old_post_color                 : #ff0000;

@@ -25,3 +25,22 @@ img {
     @include prefixer(background-size, cover);
     @include prefixer(background-repeat, no-repeat);
 }
+.overlay {
+    @include Overlay($overlay-color, .65); 
+}
+
+.zoom img {
+    @include prefixer(transition, all 0.2s linear);
+}
+.zoom:hover img {
+    @include prefixer(transform, scale(1.1));
+}
+
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    @include prefixer(background-size,cover);
+}
