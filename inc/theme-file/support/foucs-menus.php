@@ -30,7 +30,7 @@ function foucs_custom_menus() {
 function foucs_nav_custom_upper_menu() {
     wp_nav_menu(array(
         'theme_location'    => 'primary',
-        'menu_class'        => 'navbar-nav ml-auto text-capitalize',
+        'menu_class'        => 'navbar-nav ml-auto text-capitalize', // UL CLass
         'container'         => false,
         'depth'             => 2,
         'walker'            => new wp_bootstrap_navwalker(),

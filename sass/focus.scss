@@ -26,7 +26,14 @@
 @import "layout/header";
 //- Slider
 @import "layout/slider";
-//- Artical
-@import "page/home/artical";
+
+/*** START ARTICAL POST ***/
+
+//- Old post
+@import "page/home/old-post";
+//- Top Post
+@import "page/home/top-post";
+
+/*** END ARTICAL POST ***/
 
 /*** END FOUCS NEWSPAPER STYLE ***/
