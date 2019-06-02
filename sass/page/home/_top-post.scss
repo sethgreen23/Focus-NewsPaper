@@ -57,6 +57,7 @@
                             }
                         }
                     }
+                    .post-author,
                     .top-post-date,
                     .top-post-view,
                     .top-post-comment {
@@ -64,6 +65,26 @@
                         i {
                             color: $icon_slid_color ;
                             margin-right: 3px;
+                        }
+                    }
+                    .post-author {
+                        color: $white_color;
+                        margin-right: 6px;
+                        font-size: 15px;
+                        font-family: $main-font ;
+                        font-weight: 700;
+                        i {
+                            margin-right: 3px;
+                            color: $icon_slid_color;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $primary_color;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
                         }
                     }
                     .top-post-date {

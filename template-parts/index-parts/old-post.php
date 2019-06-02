@@ -39,6 +39,14 @@
                                         </a>
                                     </div>
                                     <!--- End old-post-title--->
+
+                                    <div class="post-author">
+                                        <i class="fas fa-user"></i>
+                                        <span class="name-author text-capitalize">
+                                            <?php esc_url(the_author_posts_link()) // Echo Name Author Wraiting Post?>
+                                        </span>
+                                    </div>
+                                    
                                     <!--- Start old-post-date--->
                                     <div class="old-post-date">
                                         <i class="far fa-clock"></i>
