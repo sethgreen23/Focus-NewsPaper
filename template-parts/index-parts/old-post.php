@@ -18,7 +18,7 @@
         if( $post_ordring->have_posts()){ // Check Have Posts Or No
             while( $post_ordring->have_posts() ){ 
                 // Start Loop
-               $ddr = $post_ordring->the_post(); // Echo Post?>
+                $post_ordring->the_post(); // Echo Post?>
                 <div class="container">
                     <div class="row">
                         <div class="old-one">

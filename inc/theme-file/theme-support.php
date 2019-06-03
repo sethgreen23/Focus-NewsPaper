@@ -16,10 +16,6 @@ require get_template_directory() . '/inc/theme-file/support/foucs-excerpt.php';
 
 
 /*** Add Function Featured ***/
-
-// Add Featured Image Support
-add_theme_support('post-thumbnails');
-
 /*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -35,9 +31,11 @@ add_theme_support(
 			)
 );
 
+// Add Featured Image Support
+add_theme_support('post-thumbnails');
+
 // Load default block styles.
 add_theme_support( 'wp-block-styles' );
 
 // Add support for responsive embeds.
 add_theme_support( 'responsive-embeds' );
-

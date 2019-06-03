@@ -33,9 +33,37 @@
 @import "page/home/old-post";
 //- Top Post
 @import "page/home/top-post";
-//- Top Post
+//- Category Index
 @import "page/home/category-index";
 
 /*** END ARTICAL POST ***/
 
+/*** END ARTICAL POST  TAB ***/
+
+// Gallery Tab
+@import "page/cat-tab/gallery-tab";
+// Popular Tab
+@import "page/cat-tab/popular-tab";
+
+/*** END ARTICAL POST TAB ***/
+
 /*** END FOUCS NEWSPAPER STYLE ***/
+
+.latest-news-title {
+    .body-latest-news-title {
+        &::before {
+            content: "Latest News";
+            display: inline-block;
+            font-style: normal;
+            background: #C20;
+            padding: 10px;
+            color: #FFF;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .latest-news {
+        }
+    }
+}

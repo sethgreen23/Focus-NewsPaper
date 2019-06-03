@@ -11,7 +11,8 @@
         // Ordring Posy by Date & Order ASC & Show One Post
         // Used WP_Query Class
         $top_views_args = (array(
-            'orderby'        => 'foucs_posts_views',
+            'post_type'		 => 'post',
+            'orderby'		 => 'comment_count',
             'order'          => 'DESC',
             'posts_per_page' => 1,
             'post_status'    => 'publish',
@@ -57,14 +58,6 @@
                                         </span>  
                                     </div>
                                     <!--- End top-post-date--->
-                                    <!--- Start top-post-view--->
-                                    <div class="top-post-view">
-                                        <i class="fab fa-gripfire"></i>
-                                        <span class="view">
-                                            <?php foucs_post_views() //Get The Post Views?>
-                                        </span>
-                                    </div>
-                                    <!--- End top-post-view--->
                                     <!--- Start top-post-comment--->
                                     <div class="top-post-comment">
                                         <i class="fas fa-comment"></i>
@@ -93,7 +86,8 @@
                             <ul>
                                 <?php
                                     $top_post_all = (array(
-                                        'orderby'        => 'foucs_posts_views',
+                                        'post_type'		 => 'post',
+                                        'orderby'		 => 'comment_count',
                                         'order'          => 'ASC',
                                         'posts_per_page' => 4,
                                         'post_status'    => 'publish',
@@ -126,14 +120,6 @@
                                                         </span>  
                                                     </div>
                                                     <!--- End top-all-post-date--->
-                                                    <!--- Start top-all-post-view-->
-                                                    <div class="top-all-post-view">
-                                                        <i class="fab fa-gripfire"></i>
-                                                        <span class="view">
-                                                            <?php foucs_post_views() //Get The Post Views?>
-                                                        </span>
-                                                    </div>
-                                                    <!--- End top-all-post-view--->
                                                      <!--- Start top-all-post-comment--->
                                                     <div class="top-all-post-comment">
                                                         <i class="fas fa-comment"></i>

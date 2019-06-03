@@ -3,10 +3,10 @@
     <!-- Start Tab Menu --->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link text-capitalize active" id="fitness-tab" data-toggle="tab" href="#fitness" role="tab" aria-controls="fitness" aria-selected="true">fitness</a>
+        <a class="nav-link text-capitalize active" id="popular-post-tab" data-toggle="tab" href="#popular-post" role="tab" aria-controls="popular-post" aria-selected="true">popular</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-capitalize" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="false">food</a>
+        <a class="nav-link text-capitalize" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">videos</a>
       </li>
 
       <li class="nav-item">
@@ -29,12 +29,12 @@
     <!-- Start Tab content --->
     <div class="tab-content" id="myTabContent">
 
-      <div class="tab-pane fade show active" id="fitness" role="tabpanel" aria-labelledby="fitness-tab">
-        <?php get_template_part( 'template-parts/index-parts/tab-post/cat','fitness');?>
+      <div class="tab-pane fade show active" id="popular-post" role="tabpanel" aria-labelledby="popular-post-tab">
+        <?php get_template_part( 'template-parts/index-parts/tab-post/cat','popular-post');?>
       </div>
 
-      <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
-          <?php get_template_part( 'template-parts/index-parts/tab-post/cat','food');?>
+      <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+          <?php get_template_part( 'template-parts/index-parts/tab-post/cat', 'video');?>
       </div>
 
       <div class="tab-pane fade" id="movies" role="tabpanel" aria-labelledby="movies-tab">
@@ -59,4 +59,4 @@
 
 <?php
 
-// Show In Tab Post Format Img & Gallery & quate & Video
+// Show In Tab Post Format Img & popular-post & quate & Video

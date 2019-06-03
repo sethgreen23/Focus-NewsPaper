@@ -9,6 +9,7 @@
                 color: $white-color;
                 font-size: 17px;
                 font-family: $main-font;
+                font-weight: 600;
             }
         }
         .old-post-body {
@@ -59,7 +60,7 @@
                     .post-author,
                     .old-post-date,
                     .old-post-comment {
-                        display: inline-block;
+                        display: contents;
                         i {
                             color: $icon_slid_color ;
                             margin-right: 3px;
@@ -171,7 +172,7 @@
                         .old-all_post-view {
                             position: absolute;
                             margin-top: 4em;
-                            display: inline-block;
+                            display: contents;
                         }
                         .old-all-post-date {
                             margin-left: 5px;

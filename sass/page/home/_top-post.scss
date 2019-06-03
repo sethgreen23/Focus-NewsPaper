@@ -1,5 +1,4 @@
 /** Start Top Post Block ***/
-
 .artical-container {
     .top-post-views {
         .artical-name {
@@ -10,6 +9,7 @@
                 color: $white-color;
                 font-size: 17px;
                 font-family: $main-font;
+                font-weight: 600;
             }
         }
         .top-post {
@@ -59,9 +59,8 @@
                     }
                     .post-author,
                     .top-post-date,
-                    .top-post-view,
                     .top-post-comment {
-                        display: inline-block;
+                        display: contents;
                         i {
                             color: $icon_slid_color ;
                             margin-right: 3px;
@@ -93,11 +92,6 @@
                             font-size: 14px;
                             margin-right: 5px;
                             font-weight: 400;
-                        }
-                    }
-                    .top-post-view {
-                        i {
-                            color: $icon_slid_view;
                         }
                     }
                     .top-post-comment {
@@ -175,11 +169,10 @@
                             }
                         }
                         .top-all-post-date,
-                        .top-all-post-view,
                         .top-all-post-comment {
                             position: absolute;
                             margin-top: 4em;
-                            display: inline-block;
+                            display: contents;
                             i {
                                 color: $icon_slid_color ;
                                 margin-right: 3px;
@@ -192,12 +185,6 @@
                                 font-size: 14px;
                                 margin-right: 5px;
                                 font-weight: 400;
-                            }
-                        }
-                        .top-all-post-view {
-                            margin-left: 6.5em;
-                            i {
-                                color: $icon_slid_view;
                             }
                         }
                         .top-all-post-comment {

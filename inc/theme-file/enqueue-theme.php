@@ -42,7 +42,9 @@ function foucs_js_files() {
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/inc/bootstrap.min.js', array(), false, true);
         // Add Nicescroll Script
     wp_enqueue_script('nicescroll-js', get_template_directory_uri() . '/js/inc/jquery.nicescroll.min.js', array(), false, true);
-    // Add Slick Script
+        // Add Easy Ticker Script
+    wp_enqueue_script('easy-ticker', get_template_directory_uri() . '/js/inc/jquery.easy-ticker.min.js', array(), false, true);
+        // Add Slick Script
     wp_enqueue_script('owl-js', get_template_directory_uri() . '/js/inc/slick.min.js', array(), false, true);
         // Add owl carousel Script
     wp_enqueue_script('owl-js', get_template_directory_uri() . '/js/inc/owl.carousel.min.js', array(), false, true);
