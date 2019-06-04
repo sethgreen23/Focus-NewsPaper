@@ -1,18 +1,22 @@
 /** Start Top Post Block ***/
 .artical-container {
     .top-post-views {
+        margin-top: 15px;
         .artical-name {
+            padding-bottom: 2.90px;
             @include prefixer(border-bottom, 2px solid $top_post_color);
-            .top-post {
+            .top-post-name {
                 background: $top_post_color;
-                padding: 2px;
+                padding: 5px;
                 color: $white-color;
-                font-size: 17px;
+                font-size: 18px;
                 font-family: $main-font;
                 font-weight: 600;
+                @include prefixer(border-radius, 5px);
             }
         }
         .top-post {
+            margin-bottom: 15px;
             .top-post-one,
             .top-all-post {
                 display: contents;
@@ -117,6 +121,7 @@
                             font-family: $main-font;
                             font-size: 15px;
                             font-weight: 700;
+                            margin-bottom: 3px;
                         }
                     }
                 }
@@ -127,7 +132,9 @@
                     overflow: hidden;
                     .top-all-post-body {
                         margin-top: 10px;
-                        background-color: $backgroun_body_block ;
+                        background-color: $white-color;
+                        @include prefixer (border, 1px solid $border_color);
+                        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
                         @include prefixer (border-radius, 10px);
                         .img-top-all-post {
                             width: 100px;

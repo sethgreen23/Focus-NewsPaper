@@ -29,6 +29,8 @@
 
 /*** START ARTICAL POST ***/
 
+//- Latest News
+@import "page/home/latest-news";
 //- Old post
 @import "page/home/old-post";
 //- Top Post
@@ -39,7 +41,12 @@
 /*** END ARTICAL POST ***/
 
 /*** END ARTICAL POST  TAB ***/
-
+// Category Tab
+@import "page/cat-tab/category-tab";
+// World Tab
+@import "page/cat-tab/world-tab";
+// Tech Tab
+@import "page/cat-tab/tech-tab";
 // Gallery Tab
 @import "page/cat-tab/gallery-tab";
 // Popular Tab
@@ -48,22 +55,3 @@
 /*** END ARTICAL POST TAB ***/
 
 /*** END FOUCS NEWSPAPER STYLE ***/
-
-.latest-news-title {
-    .body-latest-news-title {
-        &::before {
-            content: "Latest News";
-            display: inline-block;
-            font-style: normal;
-            background: #C20;
-            padding: 10px;
-            color: #FFF;
-            font-weight: bold;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .latest-news {
-        }
-    }
-}

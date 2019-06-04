@@ -1,52 +1,23 @@
-/*** Start category index ***/
-.articals-cat-body {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    .artical-name-one {
-        @include prefixer(border-bottom, 2px solid $cat-left-color);
-    }
-    .artical-name-two {
-        @include prefixer(border-bottom, 2px solid $cat-right-color);
-    }
-    .artical-name-one,
-    .artical-name-two {
-        padding-bottom: 2.90px;
-        .cat-one,
-        .cat-two {
-            padding: 5px;
-            color: $white-color;
-            font-size: 18px;
-            font-family: $main-font;
-            font-weight: 600;
-            @include prefixer(border-radius, 5px);
-        }
-        .cat-one {
-            background: $cat-left-color;
-        }
-        .cat-two {
-            background: $cat-right-color;
-        }
-    }
-}
-.category-index {
-    .body-category-index {
+/*** Start tech tap***/
+.tech-tab {
+    .body-tech-post {
         width: 100%;
-        min-height: 48em;
         overflow: hidden;
         display: inline-block;
         .body-post {
             width: 100%;
-            height: 9em;
             overflow: hidden;
             position: relative;
             padding: 5px;
+            margin-bottom: 15px;
             background-color: $white-color;
             @include prefixer (border, 1px solid $border_color);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
-            .img-category-index {
-                width: 170px;
-                height: 120px;
+            .img-tech-index {
+                width: 180px;
+                height: 130px;
                 display: inline-block;
+                @include prefixer(border-radius, 10px);
                 .post-img {
                     position: relative;
                     width: 100%;
@@ -56,10 +27,11 @@
                         position: relative;
                         width: 100%;
                         height: 100%;
+                        @include prefixer(border-radius, 10px);
                     }
                 }
             }
-            .category-post-title {
+            .tech-post-title {
                 position: absolute;
                 display: inline-block;
                 margin-top: 15px;
@@ -79,39 +51,80 @@
                     }
                 }
             }
-            .category-index-content {
-                display: none;
-            }
-            .category-post-author {
-                display: none;
-            }
-            .category-index-date,
-            .category-index-view {
+            .tech-index-content,
+            .tech-index-date,
+            .tech-post-author,
+            .tech-index-view {
                 display: contents;
                 position: absolute;
                 margin-top: 4.5em;
             }
-            .category-index-date {
+            .tech-index-content {
+                overflow: hidden;
+                p {
+                    color: $content_color;
+                    font-family: $main-font;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            .tech-post-author {
                 margin-left: 5px;
-                .category-date {
+                color: $white_color;
+                margin-right: 6px;
+                font-size: 16px;
+                font-family: $main-font ;
+                font-weight: 700;
+                i {
+                    margin-right: 3px;
+                    color: $icon_slid_color;
+                }
+                a {
+                    text-decoration: none;
+                    color: $primary_color;
+                    @include prefixer (transition, all 0.3s);
+                    &:hover {
+                        color: $secondary_color;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                }
+                
+            }
+            .tech-index-date {
+                .tech-date {
                     font-family: $second-font;
                     font-size: 14px;
                     margin-right: 5px;
                     font-weight: 400;
                 }
             }
-            .category-index-view {
-                margin-left: 6.5em;
+            .tech-index-view {
+                margin-left: 9em;
                 i {
                     color: $icon_slid_view;
                 }
             }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                width: 408px;
+                display: inline-block;
+            }
+            &:nth-child(2),
+            &:nth-child(4) {
+                float: left;
+            }
+            &:nth-child(3),
+            &:nth-child(5) {
+                float: right;
+            }
             &:first-child {
-                height: 30.7em;
-                .img-category-index {
-                    width: 400px;
-                    height: 300px;
-                    display: table-cell;
+                padding: 10px;
+                .img-tech-index {
+                    width: 275px;;
+                    height: 165px;
+                    display: inline-block;
                     .post-img {
                         position: relative;
                         width: 100%;
@@ -123,19 +136,18 @@
                         }
                     }
                 }
-                .category-post-title {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    margin-top: 10px;
-                    margin-left: 0;
+                .tech-post-title {
+                    position: absolute;
+                    display: inline-block;
+                    margin-top: 25px;
+                    margin-left: 10px;
                     overflow: hidden;
                     a {
                         text-decoration: none;
                     }
                     .post-title {
                         font-family: $main-font;
-                        font-size: 18px;
+                        font-size: 20px;
                         color: $primary_color;
                         font-weight: 600;
                         @include prefixer (transition, all 0.3s);
@@ -145,31 +157,34 @@
                         }
                     }
                 }
-                .category-index-content {
-                    display: block;
-                    width: 100%;
-                    margin-top: 10px;
+                .tech-index-content {
+                    position: absolute;
+                    display: inline-block;
+                    margin-top: 4em;
+                    margin-left: 10px;
                     overflow: hidden;
                     p {
                         color: $content_color;
                         font-family: $main-font;
-                        font-size: 15px;
+                        font-size: 17px;
                         font-weight: 700;
                     }
                 }
-                .category-post-author,
-                .category-index-date,
-                .category-index-view {
+                .tech-post-author,
+                .tech-index-date,
+                .tech-index-view {
+                    position: absolute;
                     display: contents;
-                    position: relative;
-                    margin-top: 3px;
+                    margin-top: 9em;
+                    margin-left: 5px;
                 }
-                .category-post-author {
+                .tech-post-author {
                     color: $white_color;
                     margin-right: 6px;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-family: $main-font ;
                     font-weight: 700;
+                    margin-left: 10px;
                     i {
                         margin-right: 3px;
                         color: $icon_slid_color;
@@ -184,13 +199,20 @@
                         }
                     }
                 }
-                .category-index-view {
-                    margin-left: 3px;
+                .tech-index-date {
+                    margin-left: 8.3em;
+                    .tech-date {
+                        font-family: $second-font;
+                        font-size: 14px;
+                        margin-right: 5px;
+                        font-weight: 400;
+                    }
+                }
+                .tech-index-view {
+                    margin-left: 14.5em;
                 }
             }
         }
     }
 }
-
-
-/*** End category index ***/
+/*** End tech tap***/

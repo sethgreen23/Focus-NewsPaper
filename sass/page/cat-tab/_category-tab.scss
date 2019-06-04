@@ -1,0 +1,52 @@
+/*** Start categories-tab ***/
+.categories-tab {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    .nav-tabs { 
+        display: inline-flex;
+        overflow: hidden;
+        position: relative;
+        padding: 5px;
+        margin-bottom: 3px;
+        background-color: $white-color;
+        @include prefixer (border-radius, 10px);
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        @include prefixer (transition, all 0.3s);
+        .nav-item {
+            a {
+                color: $primary_color;
+                font-family: $second-font;
+                font-size: 18px;
+                font-weight: 500;
+                &:hover {
+                    a {
+                        color: $secondary_color;
+                    }
+                }
+            }
+        }
+        .nav-link {
+            @include prefixer (transition, all 0.3s);
+            &:hover {
+                color: $white-color;
+                background-color: $primary_color;
+                @include prefixer (border-radius, 10px);
+                @include prefixer (border, 1px solid $border_color);
+                @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+                @include prefixer (transition, all 0.3s);
+            }
+        }
+    }
+    .nav-tabs .nav-link.active {
+        color: $secondary_color;
+        background-color: $primary_color;
+        @include prefixer (border-radius, 10px);
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        @include prefixer (transition, all 0.3s);
+    }
+}
+
+
+/*** End categories-tab ***/

@@ -48,7 +48,7 @@ jQuery(document).ready( function($){
       
     });
 
-   /* $('.latest-news').easyTicker({
+    $('.latest-news').easyTicker({
         direction: 'up',
         easing: 'swing',
         speed: 'slow',
@@ -63,6 +63,6 @@ jQuery(document).ready( function($){
             playText: 'Play',
             stopText: 'Stop'
         }
-    });*/
+    });
 
 });

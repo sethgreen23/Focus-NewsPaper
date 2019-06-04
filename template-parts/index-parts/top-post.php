@@ -2,7 +2,7 @@
 <div class="top-post-views">
 <!--- Start Articals Section Name --->
 <div class="artical-name">
-    <span class="top-post text-uppercase">top post</span>
+    <span class="top-post-name text-uppercase">top post</span>
 </div>
 <!--- End Articals Section Name --->
 <!--- Start top-post --->
