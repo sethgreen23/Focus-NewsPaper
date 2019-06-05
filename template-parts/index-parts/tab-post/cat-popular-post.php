@@ -67,6 +67,6 @@
                 wp_reset_postdata(); 
                 wp_reset_query();
             ?>
-        </div>
-    </div>
-</div>
+        </div><!-- End body-popular-post --->
+    </div><!-- End articals-popular --->
+</div><!-- End popular-tab --->

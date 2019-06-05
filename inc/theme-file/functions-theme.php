@@ -44,3 +44,23 @@ function foucs_post_views() {
 }
 // Remove The Hook
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
+
+
+/*
+	*** Function categories
+*/
+ function show_category_name () {
+    $categories = get_terms( 'category', array(
+        'orderby'    => 'count',
+        'hide_empty' => 0
+    ) );
+    /*$cat_args = array (
+        'title_li'            => __('<span>Popular Category</span>' ),
+        'show_option_all'     => '',
+        'show_option_none'    => __( 'No categories' ),
+        'depth'               => 0,
+        'order'               => 'DESC',
+        'orderby'             => 'count',
+    );*/
+    return $categories;
+ }
