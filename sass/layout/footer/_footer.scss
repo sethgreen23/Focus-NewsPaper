@@ -1,0 +1,15 @@
+/*** Start Footer section ***/
+.footer-section {
+    background-color: $primary_color;
+    width: 100%;
+    height: auto;
+    .footer-body {
+        .container-fluid {
+            .bord-footer{
+                @include prefixer (border-bottom, 1px solid #454545);
+            }
+
+        }
+    }
+}
+/*** End footer section ***/

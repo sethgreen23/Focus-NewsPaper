@@ -1,0 +1,43 @@
+/*** Start footer about us ***/
+.footer-section {
+    .footer-body {
+        .row {
+            .follow-us {
+                margin-top: 4em;
+                span {
+                    margin-bottom: 10px;
+                    color: $secondary_color;
+                    font-family: $second-font;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                .foucs-newspaper-social {
+                    margin-top: 1em;
+                    margin-top: 1em;
+                    position: relative;
+                    width: 100%;
+                    .foucs-social-icon {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        a {
+                            text-decoration: none;
+                            .icons {
+                                position: absolute;
+                                width: 43px;
+                                height: 43px;
+                                border: 2px solid;
+                                i {
+                                    position: absolute;
+                                    padding: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*** End footer about us  ***/

@@ -9,16 +9,14 @@
 ?>
 <!--- Start popular-tag-footer --->
 <div class="popular-tag-footer">
-    <div class="articals-tag-popular">
-        <!-- Start articals-tag-popular --->
-        <div class="body-tag-popular">
-            <div class="name-artical">
-                <span class="text-capitalize">popular tags</span>
-            </div>
-            <div class="tag-body"> 
-                <?php foucs_show_taxonomy('post_tag','count', 'DESC', 10,) ?>      
-            </div><!-- End tag-body --->
-        </div><!-- End body-tag-popular --->
-    </div><!-- End articals-tag-popular --->
+    <!-- Start articals-tag-popular --->
+    <div class="body-articals-tag-popular">
+        <div class="name-artical">
+            <span class="footer-name text-capitalize">popular tags</span>
+        </div>
+        <div class="tag-body"> 
+            <?php foucs_show_taxonomy('post_tag','count', 'DESC', 10,) ?>      
+        </div><!-- End tag-body --->
+    </div><!-- End body-articals-tag-popular --->
 </div><!-- End popular-tag-footer --->
                         

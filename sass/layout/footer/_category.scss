@@ -1,0 +1,72 @@
+/*** Start Footer popular Category ***/
+.footer-section {
+    .popular-cat-footer {
+        margin-left: 10em;
+        .body-articals-cat-popular {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            overflow: hidden;
+            .name-artical {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .footer-name {
+                    color: $white_color;
+                    font-family: $second-font;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                &:before {
+                    content: '';
+                    @include prefixer (border-right, 3px solid $secondary_color);
+                }
+            }
+            .category-body {
+                .all-taxonomy {
+                    .taxonomy {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        @include prefixer (transition, all 0.3s);
+                        &:before {
+                            content: '';
+                            @include prefixer (transition, all .3s ease-in-out);
+                        }
+                        a {
+                            text-decoration: none;
+                            .name {
+                                text-transform: capitalize;
+                                font-family: $main-font;
+                                font-size: 18px;
+                                color: $white_color;
+                                font-weight: 600;
+                                margin-left: 5px;
+                            }
+                        }
+                        .count-num {
+                            color: $icon_slid_color;
+                            font-family: $second-font;
+                            font-size: 18px;
+                            font-weight: 400;
+                            float: right;
+                        }
+                        &:hover {
+                            .name,
+                            .count-num {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                            &:before {
+                                content: '';
+                                @include prefixer (border-right, 3px solid $white_color);
+                                @include prefixer (transition, all .3s ease-in-out);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*** End Footer popular Category ***/

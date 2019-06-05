@@ -2133,6 +2133,368 @@ img {
 
 /*** End popular tap***/
 /*** END ARTICAL POST TAB ***/
+/*** END FOOTER ***/
+/*** Start Footer section ***/
+.footer-section {
+  background-color: #222f3e;
+  width: 100%;
+  height: auto;
+}
+.footer-section .footer-body .container-fluid .bord-footer {
+  -webkit-border-bottom: 1px solid #454545;
+  -moz-border-bottom: 1px solid #454545;
+  -o-border-bottom: 1px solid #454545;
+  border-bottom: 1px solid #454545;
+}
+
+/*** End footer section ***/
+/*** Start Footer popular post ***/
+.footer-section .popular-footer .body-articals-popular {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+.footer-section .popular-footer .body-articals-popular .name-artical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-section .popular-footer .body-articals-popular .name-artical .footer-name {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-section .popular-footer .body-articals-popular .name-artical:before {
+  content: '';
+  -webkit-border-right: 3px solid #ff9900;
+  -moz-border-right: 3px solid #ff9900;
+  -o-border-right: 3px solid #ff9900;
+  border-right: 3px solid #ff9900;
+}
+.footer-section .popular-footer .body-articals-popular .body-post {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .img-popular-footer {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .img-popular-footer .post-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .img-popular-footer .post-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-post-title {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-post-title a {
+  text-decoration: none;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-post-title .post-title {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-post-title .post-title:hover {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-footer-date {
+  position: absolute;
+  display: inline-block;
+  margin-top: 3em;
+  margin-left: 5px;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-footer-date i {
+  color: #9b9797;
+}
+.footer-section .popular-footer .body-articals-popular .body-post .popular-footer-date .popular-date {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: 400;
+}
+
+/*** End Footer popular post ***/
+/*** Start Footer popular Category ***/
+.footer-section .popular-cat-footer {
+  margin-left: 10em;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .name-artical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .name-artical .footer-name {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .name-artical:before {
+  content: '';
+  -webkit-border-right: 3px solid #ff9900;
+  -moz-border-right: 3px solid #ff9900;
+  -o-border-right: 3px solid #ff9900;
+  border-right: 3px solid #ff9900;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy:before {
+  content: '';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy a {
+  text-decoration: none;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy a .name {
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy .count-num {
+  color: #9b9797;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy:hover .name,
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy:hover .count-num {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-cat-footer .body-articals-cat-popular .category-body .all-taxonomy .taxonomy:hover:before {
+  content: '';
+  -webkit-border-right: 3px solid #ffffff;
+  -moz-border-right: 3px solid #ffffff;
+  -o-border-right: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*** End Footer popular Category ***/
+/*** Start Footer popular Tags ***/
+.footer-section .popular-tag-footer {
+  margin-left: 10em;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .name-artical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .name-artical:before {
+  content: '';
+  -webkit-border-right: 3px solid #ff9900;
+  -moz-border-right: 3px solid #ff9900;
+  -o-border-right: 3px solid #ff9900;
+  border-right: 3px solid #ff9900;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .name-artical .footer-name {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy:before {
+  content: '';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy a {
+  text-decoration: none;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy a .name {
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy .count-num {
+  color: #9b9797;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy:hover .name,
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy:hover .count-num {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-section .popular-tag-footer .body-articals-tag-popular .tag-body .all-taxonomy .taxonomy:hover:before {
+  content: '';
+  -webkit-border-right: 3px solid #ffffff;
+  -moz-border-right: 3px solid #ffffff;
+  -o-border-right: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*** End Footer popular tags ***/
+/*** Start footer logo ***/
+.footer-section .footer-body .row .foucs-logo {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.footer-section .footer-body .row .foucs-logo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer-section .footer-body .row .foucs-logo .desc-site {
+  position: relative;
+  bottom: 4.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/*** End footer logo ***/
+/*** Start footer about us ***/
+.footer-section .footer-body .row .foucs-about {
+  margin-top: 4em;
+}
+.footer-section .footer-body .row .foucs-about span {
+  margin-bottom: 10px;
+  color: #ff9900;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-section .footer-body .row .foucs-about .about-desc {
+  margin-top: 15px;
+}
+.footer-section .footer-body .row .foucs-about .about-desc .about {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*** End footer about us  ***/
+/*** Start footer about us ***/
+.footer-section .footer-body .row .follow-us {
+  margin-top: 4em;
+}
+.footer-section .footer-body .row .follow-us span {
+  margin-bottom: 10px;
+  color: #ff9900;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-section .footer-body .row .follow-us .foucs-newspaper-social {
+  margin-top: 1em;
+  margin-top: 1em;
+  position: relative;
+  width: 100%;
+}
+.footer-section .footer-body .row .follow-us .foucs-newspaper-social .foucs-social-icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.footer-section .footer-body .row .follow-us .foucs-newspaper-social .foucs-social-icon a {
+  text-decoration: none;
+}
+.footer-section .footer-body .row .follow-us .foucs-newspaper-social .foucs-social-icon a .icons {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border: 2px solid;
+}
+.footer-section .footer-body .row .follow-us .foucs-newspaper-social .foucs-social-icon a .icons i {
+  position: absolute;
+  padding: 11px;
+}
+
+/*** End footer about us  ***/
+/*** END FOOTER ***/
 /*** END FOUCS NEWSPAPER STYLE ***/
 
 /*# sourceMappingURL=focus.css.map */
