@@ -47,20 +47,53 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 
 
 /*
-	*** Function categories
+    *** Function Get The Taxonomy [ Category & Tags ]
+    *** Used Class WP_Term_Query()
+    *** Arguments [$name_taxonomy, $number_term, $order_by, $order]
+    *** Version: 1.0.2
 */
- function show_category_name () {
-    $categories = get_terms( 'category', array(
-        'orderby'    => 'count',
-        'hide_empty' => 0
-    ) );
-    /*$cat_args = array (
-        'title_li'            => __('<span>Popular Category</span>' ),
-        'show_option_all'     => '',
-        'show_option_none'    => __( 'No categories' ),
-        'depth'               => 0,
-        'order'               => 'DESC',
-        'orderby'             => 'count',
-    );*/
-    return $categories;
- }
+ function foucs_show_taxonomy($name_taxonomy, $order_by, $order, $number_term) {
+    $args = array(
+        'taxonomy'               => $name_taxonomy,
+        'orderby'                => $order_by,
+        'order'                  => $order,
+        'number'                 => $number_term,
+        'hide_empty'             => false,
+    );
+    $foucs_query = new WP_Term_Query($args);
+    ?>
+        <ul class="all-taxonomy">
+        <?php 
+            foreach ( $foucs_query->get_terms() as $term ) { ?>
+                <li class="taxonomy">
+                    <a href="<?php echo get_term_link( $term ) // Get The Category Link?>">
+                        <span class="name">
+                            <?php echo esc_html($term->name) // Show Category Name?>
+                        </span>
+                    </a>
+                    <span class="count-num"><?php echo esc_html($term->count) // Show Count Post In Category?></span>
+                </li>
+            <?php
+            }?>
+        </ul>
+        <?php
+}
+
+/*
+    *** Function Get The Social Icon Links
+*/
+function foucs_social_icons_links () {
+    ob_start();
+	include 'support/foucs-social-links.php';
+	return ob_get_clean();
+}
+
+/*
+    *** Function Get The About Us Description 
+*/
+function foucs_about_us_desc () {
+    ob_start();
+	include 'support/foucs-aboutus.php';
+	return ob_get_clean();
+}
+

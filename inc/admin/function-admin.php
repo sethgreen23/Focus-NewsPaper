@@ -46,7 +46,7 @@ function foucs_newspaper_add_submenu(){
     add_submenu_page( 
         $name_page_slug,
         'Foucs Newspaper Admin Info', 
-        'Owner Info', // Sub Menu Title
+        'Theme Info', // Sub Menu Title
         'manage_options', 
         $name_page_slug, // Sulg Name Page
         'foucs_create_admin_info_page', // Name Function To Called To Output The Content Page
@@ -103,10 +103,7 @@ function foucs_newspaper_custom_settings() {
     // Admin Info
     $page_admin_name = 'foucs_newspaper';
     $name_group_admin = 'foucs-newspaper-settings-group';
-    register_setting($name_group_admin, 'profile_picture');
-    register_setting($name_group_admin, 'first_name');
-    register_setting($name_group_admin, 'last_name');
-    register_setting($name_group_admin, 'admin_description');
+    register_setting($name_group_admin, 'about_us');
     register_setting($name_group_admin,  'twitter_handler','foucs_sanitize_twitter_handler');
     register_setting($name_group_admin,'facebook_handler',);
     register_setting($name_group_admin,'instagram_handler',);
@@ -116,12 +113,10 @@ function foucs_newspaper_custom_settings() {
 
     // Add Admin Section
     $admin_sec_name = 'foucs-newspaper-admin-info';
-    add_settings_section($admin_sec_name,'Owner Info','foucs_admin_info_calback', $page_admin_name);
+    add_settings_section($admin_sec_name,'Theme Info','foucs_admin_info_calback', $page_admin_name);
 
     // Add Admin fild
-    add_settings_field('foucs-newspaper-admin-picture', 'Picture', 'foucs_admin_picture_callback', $page_admin_name, $admin_sec_name);
-    add_settings_field('foucs-newspaper-admin-fullname', 'Full Name', 'foucs_admin_full_name_callback', $page_admin_name, $admin_sec_name);
-    add_settings_field('foucs-newspaper-admin-desc', 'Description', 'foucs_admin_desc_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-admin-desc', 'About Us', 'foucs_admin_about_callback', $page_admin_name, $admin_sec_name);
 
     add_settings_field('foucs-newspaper-facebook', 'Facebook Link', 'foucs_admin_facebook_callback', $page_admin_name, $admin_sec_name);
     add_settings_field('foucs-newspaper-twitter', 'Twitter Link', 'foucs_admin_twitter_callback', $page_admin_name, $admin_sec_name);
@@ -173,32 +168,16 @@ function foucs_create_admin_info_page () {
 }
 // Function Callback Section
 function foucs_admin_info_calback () {
-    echo 'Customize Owner Information';
+    echo 'Customize Theme Information Add ( <strong> Social Links </strong> & <strong> About Us </strong> )';
 }
 
 // ALL Function Admin Info Call Back
 
-function foucs_admin_picture_callback () {
-    $picture = esc_attr( get_option( 'profile_picture' ) );
-	if( empty($picture) ){
-		echo '<input type="button" class="button button-secondary" value="Upload Profile Picture" id="upload-button"><input type="hidden" id="profile-picture" name="profile_picture" value="">';
-	} else {
-		echo '<input type="button" class="button button-secondary" value="Replace Profile Picture" id="upload-button"><input type="hidden" id="profile-picture" name="profile_picture" value="'.$picture.'"> <input type="button" class="button button-secondary" value="Remove" id="remove-picture">';
-	}
-}
-
 // Function Called Admin Page Custom Settings Field & Form
-function foucs_admin_full_name_callback() {
-    $firstName = esc_attr( get_option( 'first_name' ) );
-	$lastName = esc_attr( get_option( 'last_name' ) );
-    echo '<input type="text" name="first_name" value="'.$firstName.'" placeholder="First Name"> 
-    <input type="text" name="last_name" value="'.$lastName.'" placeholder="Last Name">';
-}
-// Function Called Admin Page Custom Settings Field & Form
-function foucs_admin_desc_callback() {
-	$description = esc_attr( get_option('admin_description') );
-    echo '<input type="text" name="admin_description" value="'.$description.'" placeholder="Description">
-    <p class="description">Write something smart.</p>';
+function foucs_admin_about_callback() {
+	$aboutus_desc = esc_attr( get_option('about_us') );
+    echo '<input type="text" name="about_us" value="'.$aboutus_desc .'" placeholder="About Us">
+    <p class="description">Write something smart. will Show About Us Description in <strong> Footer </strong></p>';
 }
 
 // Function Called Facebook Handler
