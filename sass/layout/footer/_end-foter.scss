@@ -1,0 +1,53 @@
+/*** Start end-footer ***/
+.footer-section {
+    .end-footer {
+        background: $end_footer_color;
+        height: 30px;
+        overflow: hidden;
+        .co-right {
+            line-height: 30px;
+            .copyright {
+                color: $white-color;
+                font-family: $second-font;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: .5px;
+                a {
+                    text-decoration: none;
+                    color:$secondary_color;
+                    font-family: $main-font;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                    @include prefixer (transition, all .3s ease-in-out);
+                    &:hover {
+                        color: $white-color;
+                        @include prefixer (transition, all .3s ease-in-out);
+                    }
+                }
+            }
+        }
+        .navigat {
+            line-height: 5px;
+            .footer-nav {
+                .navbar-nav {
+                    .nav-item {
+                        margin-right: 5px;
+                        .nav-link {
+                            font-family: $main-font;
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: $white-color;
+                            @include prefixer (transition, all .3s ease-in-out);
+                            &:hover {
+                                color:$secondary_color;
+                                @include prefixer (transition, all .3s ease-in-out);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*** End end-Footer ***/

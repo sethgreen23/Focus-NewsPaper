@@ -1,10 +1,12 @@
-/*** Start footer about us ***/
+/*** Start footer social links  ***/
 .footer-section {
     .footer-body {
         .row {
             .follow-us {
+                position: relative;
                 margin-top: 4em;
-                span {
+                margin-left: 12em;
+                .follow {
                     margin-bottom: 10px;
                     color: $secondary_color;
                     font-family: $second-font;
@@ -13,25 +15,73 @@
                     letter-spacing: 1px;
                 }
                 .foucs-newspaper-social {
-                    margin-top: 1em;
-                    margin-top: 1em;
                     position: relative;
                     width: 100%;
+                    margin-top: 1em;
+                    margin-top: 1em;
                     .foucs-social-icon {
                         position: relative;
                         display: inline-block;
                         width: 100%;
                         a {
                             text-decoration: none;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 24px;
+                            width: 45px;
+                            height: 40px;
+                            margin: 5px;
+                            @include prefixer (transition, all .3s ease-in-out);
                             .icons {
-                                position: absolute;
-                                width: 43px;
-                                height: 43px;
-                                border: 2px solid;
                                 i {
-                                    position: absolute;
-                                    padding: 11px;
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                    line-height: 37px;
+                                    @include prefixer (border, 1px solid $border_color);
+                                    @include prefixer (border-radius, 5px);
+                                    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+                                    @include prefixer (transition, all .3s ease-in-out);
                                 }
+                            }
+                            .facebook{
+                                i {
+                                    color: $facebook;
+                                }
+                            }
+                            .twitter{
+                                i {
+                                    color: $twitter;
+                                }
+                            }
+                            .instagram{
+                                i {
+                                    color: $instagram;
+                                }
+                            }
+                            .youtube{
+                                i {
+                                    color: $youtube;
+                                }
+                            }
+                            .pinterest{
+                                i {
+                                    color: $pinterest;
+                                }
+                            }
+                            .google{
+                                i {
+                                    color: $googleplus;
+                                }
+                            }
+                            &:hover {
+                                i {
+                                    color: $white_color;
+                                    @include prefixer (transition, all .3s ease-in-out);
+                                }
+                                background: $secondary_color;
+                                @include prefixer (border-radius, 5px);
+                                @include prefixer (transition, all .3s ease-in-out);
                             }
                         }
                     }
@@ -40,4 +90,4 @@
         }
     }
 }
-/*** End footer about us  ***/
+/*** End footer social links  ***/

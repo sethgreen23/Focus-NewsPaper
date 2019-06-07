@@ -10,13 +10,13 @@
                 <div class="container-fluid">
                     <div class="row bord-footer">
                         <div class="col-4">
-                            <?php //get_template_part( 'template-parts/footer-parts/footer-popular');?>
+                            <?php get_template_part( 'template-parts/footer-parts/footer-popular');?>
                         </div>
                         <div class="col-4">
-                            <?php //get_template_part( 'template-parts/footer-parts/footer-category');?>
+                            <?php get_template_part( 'template-parts/footer-parts/footer-category');?>
                         </div>
                         <div class="col-4">
-                            <?php //get_template_part( 'template-parts/footer-parts/footer-tags');?>
+                            <?php get_template_part( 'template-parts/footer-parts/footer-tags');?>
                         </div>
                     </div>
                     <!--- End Row --->
@@ -40,30 +40,28 @@
                         <!-- Start social icon -->
                         <div class="col-4">
                             <div class="follow-us">
-                                <span class="text-capitalize" >follow us</span>
+                                <span class="follow text-capitalize" >follow us</span>
                                 <?php echo foucs_social_icons_links() ?>
                             </div>
                         </div>
                         <!-- End social icon -->
                     </div>
                     <!--- End Row --->
-                    <div class="end-foter">
-                        <div class="row">
-                            <div class="col-6">
-                                <span>
-                                    Copyright &copy; <?php echo date('Y');?> <?php bloginfo('name');?>   by <a href="https://www.facebook.com/relationscode/">Relat!ons Code</a>
-                                </span>
-                            </div>
-                            <!-- Start Footer Nav --->
-                            <div class="col-6">
-                                <nav class="navbar navbar-expand-lg footer-nav">
-                                    <div class="collapse navbar-collapse" id="navbarNav">
-                                        <?php //foucs_nav_custom_footer_menu() ?>
-                                    </div>
-                                </nav>
-                            </div><!-- End Footer Nav --->
-                        </div><!--- End row --->
-                    </div><!--- End end-foter--->
+                    <div class="row end-footer">
+                        <div class="col-6 co-right">
+                            <span class="copyright">
+                                Copyright &copy; <?php echo date('Y');?> <?php bloginfo('name');?>   by <a href="https://www.facebook.com/relationscode/">Relat!ons Code</a>
+                            </span>
+                        </div>
+                        <!-- Start Footer Nav --->
+                        <div class="col-6 navigat">
+                            <nav class="navbar navbar-expand-lg footer-nav">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <?php foucs_nav_custom_footer_menu() ?>
+                                </div>
+                            </nav>
+                        </div><!-- End Footer Nav --->
+                    </div><!--- End row --->
                 </div><!--- End container-fluid --->
             </div> <!--- End Footer --->
         </footer><!--- End footer-body --->

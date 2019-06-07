@@ -26,7 +26,7 @@
                                 <!--- Start upper-slider-cat -->
                                 <div class="upper-slider-cat">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
-                                        <?php the_category('<span>&</span>')// Echo Name Post ?>
+                                        <?php the_category('<span>,</span>')// Echo Name Post ?>
                                     </a>
                                 </div>
                                 <!--- End upper-slider-cat -->
@@ -99,7 +99,7 @@
                                 <!--- Start down-slider-cat -->
                                 <div class="down-slider-cat">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
-                                        <?php the_category('<span>&</span>')// Echo Name Post ?>
+                                        <?php the_category('<span>,</span>')// Echo Name Post ?>
                                     </a>
                                 </div>
                                 <!--- End down-slider-cat -->

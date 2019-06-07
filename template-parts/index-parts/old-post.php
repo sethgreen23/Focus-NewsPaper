@@ -81,12 +81,10 @@
                             <div class="col-6">
                                 <ul>
                                     <?php
-                                        $exclude_ids = array(71); //ID First Post Puplish
                                         $ordring_date_args_all = (array(
                                             'orderby'        => 'date',
                                             'order'          => 'ASC',
                                             'posts_per_page' => 4,
-                                            'post__not_in'   => $exclude_ids,
                                             'post_status'    => 'publish',
                                         ));
                                         

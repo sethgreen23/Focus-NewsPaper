@@ -48,6 +48,16 @@ jQuery(document).ready( function($){
       
     });
 
+    $('.cats-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: false,
+        arrows: false,
+        mobileFirst: true,
+       /* autoplay: true,
+        autoplaySpeed: 3000,*/
+     });
+
     $('.latest-news').easyTicker({
         direction: 'up',
         easing: 'swing',

@@ -50,7 +50,7 @@ function foucs_nav_custom_theme_menu() {
 function foucs_nav_custom_footer_menu() {
     wp_nav_menu(array(
         'theme_location'    => 'footer_menu',
-        'menu_class'        => 'navbar-nav text-capitalize',
+        'menu_class'        => 'navbar-nav ml-auto text-capitalize',
         'container'         => false,
         'depth'             => 1,
         'walker'            => new wp_bootstrap_navwalker(),
