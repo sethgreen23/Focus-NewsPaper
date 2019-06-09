@@ -5,7 +5,6 @@
             @include prefixer (border, 1px solid $border_color);
             @include prefixer (border-radius, 5px);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
-            @include prefixer (transition, all .3s ease-in-out);
             .taxonomy {
                 margin: 5px 0;
                 @include prefixer (border-bottom, 1px solid $border_color);

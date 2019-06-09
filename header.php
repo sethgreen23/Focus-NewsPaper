@@ -33,8 +33,10 @@
         <!-- Start Uppernav  -->
         <nav class="navbar navbar-expand-lg upper-nav">
             <div class="navbar-brand">
-                <i class="fas fa-calendar-alt"></i>
+                <i class="far fa-calendar-alt"></i>
                 <span class="date"><?php echo date('F j, Y'); ?></span>
+                <i class="far fa-clock"></i>
+                <span id="timeNow" class="clock"></span>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <?php foucs_nav_custom_upper_menu() ?>

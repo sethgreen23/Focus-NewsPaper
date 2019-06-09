@@ -1,8 +1,9 @@
 /*** Start Widgets***/
 .home-sidebar {
-    .foucs-home-widget-content {
+    .foucs-newspaper-widget-content {
         margin: 10px 0;
-        .foucs-home-widget-title {
+        .foucs-newspaper-widget-title {
+            overflow: hidden;
             background-color: $white-color;
             @include prefixer (border, 1px solid $border_color);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);

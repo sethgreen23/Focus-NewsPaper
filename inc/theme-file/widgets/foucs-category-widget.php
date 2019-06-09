@@ -23,6 +23,7 @@ class Foucs_Categories_Widget extends WP_Widget {
      // back-end display of widget
 	public function form( $instance ) {  
         $defaults = array('count' => 'on');
+        $count     = (!empty($instance['count']) ? $instance['count'] : '');
         // Title Post Show
         $title     = (!empty($instance['title']) ? $instance['title'] : 'Categories');
         // Number Post Show
@@ -40,8 +41,8 @@ class Foucs_Categories_Widget extends WP_Widget {
         </p>
 
             <p>
-                <input class="checkbox" type="checkbox" <?php checked($instance['count'], "on") ?> id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>" >
-                <label for="<?php echo $this->get_field_id('count'); ?>" title="Show post counts"><?php _e('Show post counts', 'foucs_category'); ?></label>
+                <input class="checkbox" type="checkbox" <?php checked($instance['count'] == "on") ?> id="<?php echo esc_attr( $this->get_field_id( 'count' ) ) ?>" name="<?php echo esc_attr( $this->get_field_name( 'count' ) ) ?>" >
+                <label for="<?php echo esc_attr( $this->get_field_id( 'count' ) ) ?>" title="Show post counts"><?php _e('Show post counts', 'foucs_category'); ?></label>
             </p>
         <?php
     }
@@ -50,7 +51,7 @@ class Foucs_Categories_Widget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
         $instance = array('count' => 'true');
         // Title Post Show
-        $instance[ 'title' ] = ( !empty( $new_instance[ 'title' ] ) ? strip_tags( $new_instance[ 'title' ] ) : 'Categories' );
+        $instance[ 'title' ] = ( !empty( $new_instance[ 'title' ] ) ? strip_tags( $new_instance[ 'title' ] ) : '' );
         // Number Post Show
         $instance['count'] = strip_tags($new_instance['count']);
         $instance[ 'post_num' ] = ( !empty( $new_instance[ 'post_num' ] ) ? absint( strip_tags( $new_instance[ 'post_num' ] ) ) : 5 );

@@ -1,0 +1,42 @@
+/*** Start foucs-calender ***/
+.home-sidebar {
+    .foucs_date_widget {
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (border-radius, 5px);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        .month {
+            background: $primary_color;
+            font-family: $second-font;
+            color: $secondary_color;
+            font-size: 23px;
+            font-weight: 600;
+            position: relative;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 5px;
+            @include prefixer (border-radius, 5px);
+        }
+        .week {
+            color: $primary_color;
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        .day {
+            color: $primary_color;
+            font-family: $second-font;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+        .year {
+            color: $primary_color;
+            font-family: $second-font;
+            font-size: 25px;
+            font-weight: 400;
+            margin: 5px 0;
+        }
+    }
+}
+/*** End foucs-calender ***/

@@ -5,7 +5,6 @@
 		@package foucs_newspaper
 	*/
 ?>
-
 <?php get_header(); ?>
 <!---Start Slider Container --->
 <div class="silder-container">
@@ -18,7 +17,6 @@
     </div><!--- container-fluid --->
 </div>
 <!---End Slider Container --->
-
 <!--- Start Articals Section--->
 <div class="artical-container">
     <div class="container">

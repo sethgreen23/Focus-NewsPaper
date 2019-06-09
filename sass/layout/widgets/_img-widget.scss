@@ -1,0 +1,15 @@
+/*** Start img-widget ***/
+.home-sidebar {
+    .widget_media_image {
+        .image {
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        }
+    }
+}
+/*** End img-widget ***/

@@ -41,7 +41,7 @@
                         <div class="col-4">
                             <div class="follow-us">
                                 <span class="follow text-capitalize" >follow us</span>
-                                <?php echo foucs_social_icons_links() ?>
+                                <?php //echo foucs_social_icons_links() ?>
                             </div>
                         </div>
                         <!-- End social icon -->

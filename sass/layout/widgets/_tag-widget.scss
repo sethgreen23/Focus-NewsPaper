@@ -1,0 +1,30 @@
+/*** start tag-widget ***/
+.home-sidebar {
+    .widget_tag_cloud {
+        .tagcloud {
+            overflow: hidden;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: $main-font;
+                color: $primary_color;
+                font-weight: 600;
+                @include prefixer (transition, all 0.3s);
+                .tag-link-count {
+                    color: $icon_slid_color;
+                    font-family: $second-font;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                &:hover {
+                    color: $secondary_color;
+                    @include prefixer (transition, all 0.3s);
+                }
+            }
+        }
+    }
+}
+/*** End tag-widget ***/

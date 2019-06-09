@@ -13,9 +13,9 @@ function home_page_sidebar() {
         'id'            => 'foucs-home-page-sidebar',
         'description'   => __('Creating Your Sidebar'),
         'class'         => 'foucs-home-sidebar',
-        'before_widget' => '<div id="%1$s" class="foucs-home-widget-content %2$s">',
+        'before_widget' => '<div id="%1$s" class="foucs-newspaper-widget-content %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="foucs-home-widget-title">',
+		'before_title'  => '<h3 class="foucs-newspaper-widget-title text-capitalize text-center">',
 		'after_title'   => '</h3>'
     ));
 }
@@ -27,9 +27,9 @@ function single_page_sidebar() {
         'id'            => 'foucs-single-post-sidebar',
         'description'   => __('Creating Your Sidebar'),
         'class'         => 'foucs-single-sidebar',
-        'before_widget' => '<div id="%1$s" class="foucs-single-widget-content %2$s">',
+        'before_widget' => '<div id="%1$s" class="foucs-newspaper-widget-content %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="foucs-single-widget-title">',
+		'before_title'  => '<h3 class="foucs-newspaper-widget-title text-capitalize text-center">',
 		'after_title'   => '</h3>'
     ));
 }

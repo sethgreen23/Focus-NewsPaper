@@ -1,0 +1,34 @@
+/*** Start page-widget ***/
+.home-sidebar {
+    .widget_pages {
+        ul {
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            .page_item {
+                margin: 5px 0;
+                @include prefixer (border-bottom, 1px solid $border_color);
+                &:last-child {
+                    @include prefixer (border-bottom, none);
+                }
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-family: $main-font;
+                    font-size: 18px;
+                    color: $primary_color;
+                    font-weight: 600;
+                    margin-left: 5px;
+                    @include prefixer (transition, all 0.3s);
+                }
+                &:hover {
+                    a{
+                        color: $secondary_color;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                }
+            } 
+        }
+    }
+}
+/*** End page-widget ***/

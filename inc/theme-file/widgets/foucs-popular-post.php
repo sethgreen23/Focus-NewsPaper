@@ -104,6 +104,8 @@ class Foucs_Popular_Post_Widget extends WP_Widget {
                         <!--- End popular-posts -->
                         <?php
                 } // End While
+                wp_reset_postdata(); 
+                wp_reset_query();
             } // End If
                 ?>
         </div>
