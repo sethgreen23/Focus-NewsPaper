@@ -1,0 +1,102 @@
+/*** Start Social Link***/
+.home-sidebar {
+    .foucs-home-widget-content {
+        .foucs-newspaper-social {
+            .foucs-social-icon {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin: 5px 0;
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 24px;
+                    width: 45px;
+                    height: 40px;
+                    margin: 5px;
+                    @include prefixer (transition, all .3s ease-in-out);
+                    .icons {
+                        i {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            line-height: 37px;
+                            background-color: $white-color;
+                            @include prefixer (border, 1px solid $border_color);
+                            @include prefixer (border-radius, 5px);
+                            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+                            @include prefixer (transition, all .3s ease-in-out);
+                        }
+                    }
+                    .facebook {
+                        i {
+                            color: $facebook;
+                        }
+                    }
+                    .twitter {
+                        i {
+                            color: $twitter;
+                        }
+                    }
+                    .instagram {
+                        i {
+                            color: $instagram;
+                        }
+                    }
+                    .youtube {
+                        i {
+                            color: $youtube;
+                        }
+                    }
+                    .pinterest {
+                        i {
+                            color: $pinterest;
+                        }
+                    }
+                    .google {
+                        i {
+                            color: $googleplus;
+                        }
+                    }
+                    .vimeo {
+                        i {
+                            color: $vimeo;
+                        }
+                    }
+                    .feedpress {
+                        i {
+                            color: $feedpress;
+                        }
+                    }
+                    .dribbble {
+                        i {
+                            color: $dribbble;
+                        }
+                    }
+                    .soundcloud {
+                        i {
+                            color: $soundcloud;
+                        }
+                    }
+                    .linkedin {
+                        i {
+                            color: $linkedin;
+                        }
+                    }
+                    &:hover {
+                        i {
+                            color: $white_color;
+                            @include prefixer (transition, all .3s ease-in-out);
+                        }
+                        background: $secondary_color;
+                        @include prefixer (border-radius, 5px);
+                        @include prefixer (transition, all .3s ease-in-out);
+                    }
+                }
+                    
+            }
+        }
+    }
+}
+/*** End Social Link***/

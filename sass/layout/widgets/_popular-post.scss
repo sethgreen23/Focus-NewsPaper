@@ -1,0 +1,52 @@
+/*** Start foucs-widget-popular-post ***/
+.home-sidebar {
+    .foucs-widget-popular-post {
+        .popular-post-widget-body {
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            @include prefixer (transition, all .3s ease-in-out);
+            .popular-posts {
+                margin: 5px 0;
+                padding: 5px;
+                @include prefixer (border-bottom, 1px solid $border_color);
+                &:last-child {
+                    margin-bottom: 0;
+                    @include prefixer (border-bottom, none);
+                }
+                .popular-post-link {
+                    color: $primary_color;
+                }
+                a {
+                    text-decoration: none;
+                    .popular-post-title {
+                        width: 12em;
+                        display: inline-block;
+                        font-family: $second-font;
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        font-weight: 600;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                    &:hover {
+                        color: $secondary_color;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                }
+                .popular-post-view {
+                    float: right;
+                    color: $third-color;
+                    font-family: $main-font;
+                    font-weight: 700;
+                    font-size: 13px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*** End foucs-widget-popular-post ***/

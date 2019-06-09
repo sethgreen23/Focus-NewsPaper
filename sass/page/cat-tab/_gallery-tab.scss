@@ -5,6 +5,9 @@
         height: auto;
         margin-top: 10px;
         overflow: hidden;
+        background-color: $white-color;
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        @include prefixer (border-radius, 10px);
         .img-category {
             position: relative;
             display: inline-block;

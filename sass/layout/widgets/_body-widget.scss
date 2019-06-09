@@ -1,0 +1,25 @@
+/*** Start Widgets***/
+.home-sidebar {
+    .foucs-home-widget-content {
+        margin: 10px 0;
+        .foucs-home-widget-title {
+            background-color: $white-color;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            @include prefixer (border-radius, 10px);
+        }
+        .foucs-newspaper-social {
+            background-color: $white-color;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            @include prefixer (border-radius, 10px);
+        }
+    }
+    .widget_media_audio{
+        background-color: $white-color;
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        @include prefixer (border-radius, 10px);
+    }
+}
+/*** End Widgets ***/

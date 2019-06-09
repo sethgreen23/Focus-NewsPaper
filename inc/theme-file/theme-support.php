@@ -12,6 +12,7 @@
 
 require get_template_directory() . '/inc/theme-file/support/foucs-menus.php';
 require get_template_directory() . '/inc/theme-file/support/foucs-excerpt.php';
+require get_template_directory() . '/inc/theme-file/support/foucs-sidebar.php';
 
 
 
@@ -39,3 +40,5 @@ add_theme_support( 'wp-block-styles' );
 
 // Add support for responsive embeds.
 add_theme_support( 'responsive-embeds' );
+// Add Featured Widgets
+add_theme_support( 'widgets' );

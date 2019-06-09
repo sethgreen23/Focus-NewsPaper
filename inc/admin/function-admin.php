@@ -42,24 +42,24 @@ function foucs_create_admin_menu_page() {
 function foucs_newspaper_add_submenu(){
     $name_page_slug = 'foucs_newspaper'; // Name Parent Slug Menu Page
 
-    // Add Theme Support Page 
-    add_submenu_page( 
-        $name_page_slug,
-        'Foucs Newspaper Admin Info', 
-        'Theme Info', // Sub Menu Title
-        'manage_options', 
-        $name_page_slug, // Sulg Name Page
-        'foucs_create_admin_info_page', // Name Function To Called To Output The Content Page
-    );
-
     // Add Theme Option Page 
     add_submenu_page( 
         $name_page_slug,
         'Foucs Newspaper Admin Options', 
         'Theme Options', // Sub Menu Title
         'manage_options', 
-        'foucs-newspaper-options', // Sulg Name Page
+        $name_page_slug, // Sulg Name Page
         'foucs_create_admin_option_page', // Name Function To Called To Output The Content Page
+    );
+
+    // Add Theme Support Page 
+    add_submenu_page( 
+        $name_page_slug,
+        'Foucs Newspaper Social Link', 
+        'Social Link', // Sub Menu Title
+        'manage_options', 
+        'social_link', // Sulg Name Page
+        'foucs_create_admin_info_page', // Name Function To Called To Output The Content Page
     );
 
     // Add Theme ShortCode Page 
@@ -101,19 +101,26 @@ add_action('admin_menu', 'foucs_newspaper_add_submenu');
 function foucs_newspaper_custom_settings() {
 
     // Admin Info
-    $page_admin_name = 'foucs_newspaper';
-    $name_group_admin = 'foucs-newspaper-settings-group';
+    $page_admin_name = 'social_link';
+    $name_group_admin = 'social-link-settings-group';
     register_setting($name_group_admin, 'about_us');
     register_setting($name_group_admin,  'twitter_handler','foucs_sanitize_twitter_handler');
     register_setting($name_group_admin,'facebook_handler',);
     register_setting($name_group_admin,'instagram_handler',);
     register_setting($name_group_admin,'youtube_handler',);
+    register_setting($name_group_admin,'youtube_channel_handler',);
     register_setting($name_group_admin,'googleplus_handler',);
     register_setting($name_group_admin,'pinterest_handler',);
 
+    register_setting($name_group_admin,'vimeo_handler',);
+    register_setting($name_group_admin,'feedpress_handler',);
+    register_setting($name_group_admin,'dribbble_handler',);
+    register_setting($name_group_admin,'soundcloud_handler',);
+    register_setting($name_group_admin,'linkedin_handler',);
+
     // Add Admin Section
     $admin_sec_name = 'foucs-newspaper-admin-info';
-    add_settings_section($admin_sec_name,'Theme Info','foucs_admin_info_calback', $page_admin_name);
+    add_settings_section($admin_sec_name,'Social Link','foucs_admin_info_calback', $page_admin_name);
 
     // Add Admin fild
     add_settings_field('foucs-newspaper-admin-desc', 'About Us', 'foucs_admin_about_callback', $page_admin_name, $admin_sec_name);
@@ -122,13 +129,20 @@ function foucs_newspaper_custom_settings() {
     add_settings_field('foucs-newspaper-twitter', 'Twitter Link', 'foucs_admin_twitter_callback', $page_admin_name, $admin_sec_name);
     add_settings_field('foucs-newspaper-instagram', 'Instagram Link', 'foucs_admin_instagram_callback', $page_admin_name, $admin_sec_name);
 
-    add_settings_field('foucs-newspaper-youtube', 'Youtube Link', 'foucs_admin_youtube_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-youtube', 'Youtube User Link', 'foucs_admin_youtube_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-youtube-channel', 'Youtube Channel Link', 'foucs_admin_youtube_channel_callback', $page_admin_name, $admin_sec_name);
     add_settings_field('foucs-newspaper-pinterest', 'Pinterest Link', 'foucs_admin_pinterest_callback', $page_admin_name, $admin_sec_name);
     add_settings_field('foucs-newspaper-google', 'Google+ Link', 'foucs_admin_google_callback', $page_admin_name, $admin_sec_name);
+
+    add_settings_field('foucs-newspaper-vimeo', 'Vimeo Link', 'foucs_admin_vimeo_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-feedpress', 'Feedpress Link', 'foucs_admin_feedpress_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-dribbble', 'Dribbble Link', 'foucs_admin_dribbble_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-soundcloud', 'SoundCloud Link', 'foucs_admin_soundcloud_callback', $page_admin_name, $admin_sec_name);
+    add_settings_field('foucs-newspaper-linkedin', 'Linked-In Link', 'foucs_admin_linkedin_callback', $page_admin_name, $admin_sec_name);
     // End Admin Page
 
     /*** Start Theme Options Page ***/
-    $page_option_name = 'foucs-newspaper-options';
+    $page_option_name = 'foucs_newspaper';
     $name_group_option = 'foucs-newspaper-options-group';
 
     register_setting($name_group_option, 'post_formats');
@@ -164,11 +178,13 @@ function foucs_newspaper_custom_settings() {
 }
 // Function Callback Submenu
 function foucs_create_admin_info_page () {
-    require_once (get_template_directory() . '/inc/admin/templates/foucs-admin-info.php'); // Include Settings Admin Page
+    require_once (get_template_directory() . '/inc/admin/templates/foucs-admin-social-link.php'); // Include Settings Admin Page
 }
 // Function Callback Section
 function foucs_admin_info_calback () {
-    echo 'Customize Theme Information Add ( <strong> Social Links </strong> & <strong> About Us </strong> )';
+    echo '<strong>You Should Add Links In This Field</strong> <br>';
+    echo 'Because When Not Add Links The Icons Will <strong> Not Show</strong> In Footer Or SideBar <br>';
+    echo 'Not All Icone Just <strong>Empty Field</strong>';
 }
 
 // ALL Function Admin Info Call Back
@@ -193,19 +209,27 @@ function foucs_admin_twitter_callback(){
     <p class="description">Input your Twitter username without the @ character.</p>';
 }
 
-// Function Called Linked-In Handler
+// Function Called Instagram_ Handler
 function foucs_admin_instagram_callback() {
 	$instagram = esc_attr( get_option('instagram_handler') );
 	echo '<input type="text" name="instagram_handler" value="'.$instagram.'" placeholder="Add Your E-mail">';
 }
 
-// Function Called Linked-In Handler
+// Function Called Youtube User Handler
 function foucs_admin_youtube_callback() {
 	$youtube = esc_attr( get_option('youtube_handler') );
-	echo '<input type="text" name="youtube_handler" value="'.$youtube.'" placeholder="Add Your Channel">';
+    echo '<input type="text" name="youtube_handler" value="'.$youtube.'" placeholder="Add Your User Name">';
+    echo '<p> <strong> Example: </strong> https://www.youtube.com/user/RelationsCode</p>';
 }
 
-// Function Called Linked-In Handler
+// Function Called Youtube Channel Handler
+function foucs_admin_youtube_channel_callback() {
+	$youtubechannel = esc_attr( get_option('youtube_channel_handler') );
+    echo '<input type="text" name="youtube_channel_handler" value="'.$youtubechannel.'" placeholder="Add Your Channel">';
+    echo '<p> <strong> Example: </strong> https://www.youtube.com/channel/UCq_rA-RelaTIons-CoDe254</p>';
+}
+
+// Function Called Pinterest Handler
 function foucs_admin_pinterest_callback() {
 	$pinterest = esc_attr( get_option('pinterest_handler') );
 	echo '<input type="text" name="pinterest_handler" value="'.$pinterest.'" placeholder="Add Your E-mail">';
@@ -216,6 +240,40 @@ function foucs_admin_google_callback() {
 	$googleplus = esc_attr( get_option('googleplus_handler') );
 	echo '<input type="text" name="googleplus_handler" value="'.$googleplus.'" placeholder="Add Your E-mail">';
 }
+
+// Function Called Vimeo  Handler
+function foucs_admin_vimeo_callback(){
+    $vimeo = esc_attr( get_option('vimeo_handler') );
+    echo '<input type="text" name="vimeo_handler" value="'.$vimeo.'" placeholder="Add Your Channel">';
+}
+
+// Function Called Feedpress Handler
+function foucs_admin_feedpress_callback() {
+	$feedpress = esc_attr( get_option('feedpress_handler') );
+	echo '<input type="text" name="feedpress_handler" value="'.$feedpress.'" placeholder="Add Your E-mail">';
+}
+
+// Function Called Dribbble Handler
+function foucs_admin_dribbble_callback() {
+	$dribbble = esc_attr( get_option('dribbble_handler') );
+	echo '<input type="text" name="dribbble_handler" value="'.$dribbble.'" placeholder="Add Your E-mail">';
+}
+
+// Function Called SoundCloud Handler
+function foucs_admin_soundcloud_callback() {
+	$soundcloud = esc_attr( get_option('soundcloud_handler') );
+	echo '<input type="text" name="soundcloud_handler" value="'.$soundcloud.'" placeholder="Add Your E-mail">';
+}
+
+// Function Called Linked-In Handler
+function foucs_admin_linkedin_callback() {
+	$linkedin = esc_attr( get_option('linkedin_handler') );
+	echo '<input type="text" name="linkedin_handler" value="'.$linkedin.'" placeholder="Add Your E-mail">';
+}
+
+
+
+
 // Sanitization Settings
 function foucs_sanitize_twitter_handler($input){
 	$output = sanitize_text_field($input);

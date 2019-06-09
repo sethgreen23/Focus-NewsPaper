@@ -32,11 +32,13 @@
     .body-category-index {
         width: 100%;
         min-height: 48em;
-        overflow: hidden;
         display: inline-block;
+        margin-top: 10px;
+        background-color: $white-color;
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
         .body-post {
             width: 100%;
-            height: 9em;
             overflow: hidden;
             position: relative;
             padding: 5px;
@@ -44,14 +46,13 @@
             @include prefixer (border, 1px solid $border_color);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
             .img-category-index {
-                width: 170px;
-                height: 120px;
+                width: 130px;
+                height: 90px;
                 display: inline-block;
                 .post-img {
                     position: relative;
                     width: 100%;
                     height: 100%;
-                    margin-top: 10px;
                     img {
                         position: relative;
                         width: 100%;
@@ -87,9 +88,9 @@
             }
             .category-index-date,
             .category-index-view {
-                display: contents;
-                position: absolute;
-                margin-top: 4.5em;
+                display: inline-block;
+                position: relative;
+                bottom: 5px;
             }
             .category-index-date {
                 margin-left: 5px;
@@ -101,7 +102,6 @@
                 }
             }
             .category-index-view {
-                margin-left: 6.5em;
                 i {
                     color: $icon_slid_view;
                 }

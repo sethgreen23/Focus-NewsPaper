@@ -14,3 +14,4 @@
     require get_template_directory() . '/inc/theme-file/enqueue-theme.php';
     require get_template_directory() . '/inc/theme-file/functions-theme.php';
     require get_template_directory() . '/inc/theme-file/theme-support.php';
+    require get_template_directory() . '/inc/theme-file/widget.php';

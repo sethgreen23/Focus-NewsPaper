@@ -14,6 +14,14 @@
                 @include prefixer(border-radius, 5px);
             }
         }
+        .old-one-body {
+            margin-top: 10px;
+            padding: 5px;
+            background-color: $white-color;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            @include prefixer (border-radius, 10px);
+        }
         .old-post-body {
             margin-bottom: 15px;
             .old-one,
@@ -23,11 +31,9 @@
             .old-one {
                 .col-6 {
                     padding-left: 0;
-                    overflow: hidden;
                     .post-img-old {
                         width: 100%;
                         height: 330px;
-                        margin-top: 10px;
                         overflow: hidden;
                         .post-img {
                             width: 100%;
@@ -124,7 +130,6 @@
             .all-old {
                 .col-6 {
                     padding-right: 0;
-                    overflow: hidden;
                     .all-old-body {
                         margin-top: 10px;
                         background-color: $white-color;
@@ -133,7 +138,7 @@
                         @include prefixer (border-radius, 10px);
                         .img-all-old {
                             width: 100px;
-                            height: 100px;
+                            height: 90px;
                             padding: 3px;
                             display: inline-block;
                             overflow: hidden;
@@ -172,9 +177,9 @@
                         }
                         .old-all-post-date,
                         .old-all_post-view {
-                            position: absolute;
-                            margin-top: 4em;
-                            display: contents;
+                            display: inline-block;
+                            position: relative;
+                            bottom: 5px;
                         }
                         .old-all-post-date {
                             margin-left: 5px;
@@ -190,7 +195,6 @@
                             }
                         }
                         .old-all_post-view {
-                            margin-left: 6.5em;
                             i {
                                 color: $icon_slid_view;
                                 margin-right: 3px;

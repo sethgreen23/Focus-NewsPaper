@@ -45,37 +45,33 @@
 /*** END ARTICAL POST ***/
 
 /*** END ARTICAL POST  TAB ***/
-// Category Tab
 @import "page/cat-tab/category-tab";
-// World Tab
 @import "page/cat-tab/world-tab";
-// Tech Tab
 @import "page/cat-tab/tech-tab";
-// Gallery Tab
 @import "page/cat-tab/gallery-tab";
-// Popular Tab
 @import "page/cat-tab/popular-tab";
-
 /*** END ARTICAL POST TAB ***/
 
-/*** END FOOTER ***/
-// Footer
-@import "layout/footer/footer";
-// Popular Post
-@import "layout/footer/popular-post";
-// Category
-@import "layout/footer/category";
-// Tags
-@import "layout/footer/tags";
-// Logo
-@import "layout/footer/logo";
-// About Us
-@import "layout/footer/about-us";
-// Social Link
-@import "layout/footer/social-link";
-// End Footer
-@import "layout/footer/end-foter";
 
+/*** Start Sidebar Widget ***/
+@import "layout/widgets/body-widget";
+@import "layout/widgets/social_link";
+@import "layout/widgets/archive";
+@import "layout/widgets/categories";
+@import "layout/widgets/popular-post";
+/*** End Sidebar Widget ***/
+
+
+
+/*** Start FOOTER ***/
+@import "layout/footer/footer";
+@import "layout/footer/popular-post";
+@import "layout/footer/category";
+@import "layout/footer/tags";
+@import "layout/footer/logo";
+@import "layout/footer/about-us";
+@import "layout/footer/social-link";
+@import "layout/footer/end-foter";
 /*** END FOOTER ***/
 
 /*** END FOUCS NEWSPAPER STYLE ***/

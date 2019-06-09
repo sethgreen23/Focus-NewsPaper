@@ -1,18 +1,17 @@
-<!--- Start top-views --->
-<div class="top-post-views">
 <!--- Start Articals Section Name --->
 <div class="artical-name">
     <span class="top-post-name text-uppercase">top post</span>
 </div>
 <!--- End Articals Section Name --->
+<!--- Start Articals Old Body --->
 <!--- Start top-post --->
 <div class="top-post">
     <?php
         // Ordring Posy by Date & Order ASC & Show One Post
         // Used WP_Query Class
         $top_views_args = (array(
-            'post_type'		 => 'post',
-            'orderby'		 => 'comment_count',
+            'post_type'      => 'post',
+            'orderby'        => 'comment_count',
             'order'          => 'DESC',
             'posts_per_page' => 1,
             'post_status'    => 'publish',
@@ -24,7 +23,7 @@
                 $post_top->the_post(); // Echo Post?>
                 <div class="container">
                     <div class="row">
-                        <div class="top-post-one">
+                    <div class="top-post-one">
                             <div class="col-6">
                                 <!--- Start top-post-one-body --->
                                 <div class="top-post-one-body">
@@ -79,25 +78,25 @@
         } // End If
         wp_reset_postdata(); 
         wp_reset_query();
-    ?>                          
-                    <!--- Start top-all-post --->
-                    <div class="top-all-post">
-                        <div class="col-6">
-                            <ul>
-                                <?php
-                                    $top_post_all = (array(
-                                        'post_type'		 => 'post',
-                                        'orderby'		 => 'comment_count',
-                                        'order'          => 'ASC',
-                                        'posts_per_page' => 4,
-                                        'post_status'    => 'publish',
-                                    ));
-                                    $post_top_view_all = new WP_Query($top_post_all);
-                                    if( $post_top_view_all->have_posts()){ // Check Have Posts Or No
-                                        while( $post_top_view_all->have_posts() ){ 
-                                            // Start Loop
-                                            $post_top_view_all->the_post(); // Echo Post?> 
-                                                <li class="top-all-post-body">
+    ?>
+                        <!--- Start top-all-post --->
+                        <div class="top-all-post">
+                            <div class="col-6">
+                                <ul>
+                                    <?php
+                                        $top_post_all = (array(
+                                            'post_type'      => 'post',
+                                            'orderby'        => 'comment_count',
+                                            'order'          => 'ASC',
+                                            'posts_per_page' => 4,
+                                            'post_status'    => 'publish',
+                                        ));
+                                        $post_top_view_all = new WP_Query($top_post_all);
+                                        if( $post_top_view_all->have_posts()){ // Check Have Posts Or No
+                                            while( $post_top_view_all->have_posts() ){ 
+                                                // Start Loop
+                                                $post_top_view_all->the_post(); // Echo Post?> 
+                                                    <li class="top-all-post-body">
                                                     <!--- Start img-top-all-post--->
                                                     <div class="img-top-all-post overflow zoom">
                                                         <div class="post-img">
@@ -129,16 +128,15 @@
                                                     </div>
                                                     <!--- Start top-all-post-comment--->
                                                 </li><!--- End all-old-body--->
-                                    <?php    
-                                            } // End While
-                                        } // End If
-                                        wp_reset_postdata(); 
-                                        wp_reset_query();
-                                    ?>
-                            </ul><!--- End ul --->   
-                        </div> <!--- End col-6 --->
-                    </div> <!--- End top-all-post --->
-                </div><!--- End row ---> 
-            </div><!--- End container --->
-</div>                                            
-<!--- End top-post-views --->
+                                        <?php    
+                                                } // End While
+                                            } // End If
+                                            wp_reset_postdata(); 
+                                            wp_reset_query();
+                                        ?>
+                                </ul><!--- End ul --->   
+                            </div> <!--- End col-6 --->
+                        </div> <!--- End all-old --->
+                    </div><!--- End row ---> 
+                </div><!--- End container --->
+</div>
