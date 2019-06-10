@@ -31,14 +31,22 @@ class Foucs_Popular_Post_Widget extends WP_Widget {
 
         <p> 
             <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>">Title:</label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" value="<?php echo esc_attr( $title ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" 
+                value="<?php echo esc_attr( $title ) ?>">
         </p>
 
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>">PostNumber:</label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" value="<?php echo esc_attr( $post_num ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" 
+                value="<?php echo esc_attr( $post_num ) ?>">
         </p>
 
     <?php    
@@ -78,38 +86,33 @@ class Foucs_Popular_Post_Widget extends WP_Widget {
 			
             echo $args[ 'before_title' ] . apply_filters( 'widget_title', $instance[ 'title' ] ) . $args[ 'after_title' ];
         }?>
-        <!--- Start popular-post-widget-body -->
+<!--- Start popular-post-widget-body -->
         <div class="popular-post-widget-body"><?php
             if( $popular_post_query->have_posts() ){
                 // Start Loop
                 while( $popular_post_query->have_posts() ){
                       $popular_post_query->the_post();?>
-                        <!--- Start popular-posts -->
+<!--- Start popular-posts -->
                         <div class="popular-posts">
-                            <!--- Start popular-post-link -->
+<!--- Start popular-post-link -->
                             <a class="popular-post-link" href="<?php echo esc_url(get_the_permalink()); ?>">
-                                <!--- Start popular-post-title -->
+<!--- Start popular-post-title -->
                                 <h5 class="popular-post-title"> 
                                     <?php echo get_the_title(); ?> 
-                                </h5>
-                                <!--- End popular-post-title -->
-                            </a>
-                            <!--- End popular-post-link -->
-                            <!--- Start popular-post-view -->
+                                </h5> <!--- End popular-post-title -->
+                            </a><!--- End popular-post-link -->
+<!--- Start popular-post-view -->
                             <span class="popular-post-view">
                                 <?php foucs_post_views() ?> Veiws
-                            </span>
-                            <!--- End popular-post-view -->
-                        </div>
-                        <!--- End popular-posts -->
+                            </span><!--- End popular-post-view -->
+                        </div><!--- End popular-posts -->
                         <?php
                 } // End While
                 wp_reset_postdata(); 
                 wp_reset_query();
             } // End If
                 ?>
-        </div>
-        <!--- End popular-post-widget-body -->
+        </div><!--- End popular-post-widget-body -->
         <?php
 
         echo $args[ 'after_widget' ];

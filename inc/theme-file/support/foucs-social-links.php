@@ -8,13 +8,13 @@
 	*** This Icons Will Show In Footer. Just In Footer
 */
 
-    $facebook = esc_attr( get_option('facebook_handler') );
-	$twitter = esc_attr( get_option('twitter_handler') );
-    $instagram = esc_attr( get_option('instagram_handler') );
-	$youtube = esc_attr( get_option('youtube_handler') );
-	$youtubecha = esc_attr( get_option('youtube_channel_handler') );
-	$pinterest = esc_attr( get_option('pinterest_handler') );
-    $googleplus = esc_attr( get_option('googleplus_handler') );
+		$facebook 	  = esc_attr( get_option('facebook_handler') );
+		$twitter 	  = esc_attr( get_option('twitter_handler') );
+		$instagram    = esc_attr( get_option('instagram_handler') );
+		$youtube 	  = esc_attr( get_option('youtube_handler') );
+		$youtubecha   = esc_attr( get_option('youtube_channel_handler') );
+		$pinterest    = esc_attr( get_option('pinterest_handler') );
+		$googleplus   = esc_attr( get_option('googleplus_handler') );
 ?> 
 <!--- Start foucs-newspaper-social ---> 
 <div class="foucs-newspaper-social">

@@ -22,7 +22,12 @@ class Foucs_Calender_Widget extends WP_Widget {
         $title = (!empty ($instance['title']) ? $instance['title'] : 'Date'); ?>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id('title'))?>">Title: </label>
-            <input type="text" class="widefat" name="<?php echo esc_attr($this->get_field_name('title'))?>" id="<?php echo esc_attr($this->get_field_id('title'))?>" value="<?php echo esc_attr($title)?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                name="<?php echo esc_attr($this->get_field_name('title'))?>" 
+                id="<?php echo esc_attr($this->get_field_id('title'))?>" 
+                value="<?php echo esc_attr($title)?>">
         </p>
     <?php
     }

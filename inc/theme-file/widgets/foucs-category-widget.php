@@ -30,18 +30,31 @@ class Foucs_Categories_Widget extends WP_Widget {
         $post_num  = (!empty($instance['post_num']) ? $instance['post_num'] : 5); ?>
         <p> 
             <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>">Title:</label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" value="<?php echo esc_attr( $title ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" 
+                value="<?php echo esc_attr( $title ) ?>">
         </p>
 
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>">PostNumber:</label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" value="<?php echo esc_attr( $post_num ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" 
+                value="<?php echo esc_attr( $post_num ) ?>">
         </p>
 
             <p>
-                <input class="checkbox" type="checkbox" <?php checked($instance['count'] == "on") ?> id="<?php echo esc_attr( $this->get_field_id( 'count' ) ) ?>" name="<?php echo esc_attr( $this->get_field_name( 'count' ) ) ?>" >
+                <input 
+                    class="checkbox" 
+                    type="checkbox" <?php checked($instance['count'] == "on") ?> 
+                    id="<?php echo esc_attr( $this->get_field_id( 'count' ) ) ?>" 
+                    name="<?php echo esc_attr( $this->get_field_name( 'count' ) ) ?>" >
+                
                 <label for="<?php echo esc_attr( $this->get_field_id( 'count' ) ) ?>" title="Show post counts"><?php _e('Show post counts', 'foucs_category'); ?></label>
             </p>
         <?php

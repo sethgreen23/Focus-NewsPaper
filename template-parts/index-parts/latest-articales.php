@@ -27,7 +27,7 @@
                                     <?php foucs_check_post_image()?>
                                 </a>
                             </div>
-                        </div><!--- End last-post-img ---
+                        </div><!--- End last-post-img --->
 <!--- Start last-post-title --->
                         <div class="last-post-title">
                             <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">

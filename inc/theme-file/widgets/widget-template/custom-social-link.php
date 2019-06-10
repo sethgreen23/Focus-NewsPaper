@@ -8,18 +8,18 @@
 	*** This Icons Will Show Widgets In SideBar
 */
 
-    $facebook = esc_attr( get_option('facebook_handler') );
-	$twitter = esc_attr( get_option('twitter_handler') );
-    $instagram = esc_attr( get_option('instagram_handler') );
-	$youtube = esc_attr( get_option('youtube_handler') );
-	$youtubchan = esc_attr( get_option('youtube_channel_handler') );
-	$pinterest = esc_attr( get_option('pinterest_handler') );
-	$googleplus = esc_attr( get_option('googleplus_handler') );
-	$vimeo = esc_attr( get_option('vimeo_handler') );
-    $feedpress = esc_attr( get_option('feedpress_handler') );
-    $dribbble = esc_attr( get_option('dribbble_handler') );
-	$soundcloud = esc_attr( get_option('soundcloud_handler') );
-    $linkedin = esc_attr( get_option('linkedin_handler') );
+		$facebook    = esc_attr( get_option('facebook_handler') );
+		$twitter     = esc_attr( get_option('twitter_handler') );
+		$instagram   = esc_attr( get_option('instagram_handler') );
+		$youtube     = esc_attr( get_option('youtube_handler') );
+		$youtubchan  = esc_attr( get_option('youtube_channel_handler') );
+		$pinterest   = esc_attr( get_option('pinterest_handler') );
+		$googleplus  = esc_attr( get_option('googleplus_handler') );
+		$vimeo 		 = esc_attr( get_option('vimeo_handler') );
+		$feedpress 	 = esc_attr( get_option('feedpress_handler') );
+		$dribbble 	 = esc_attr( get_option('dribbble_handler') );
+		$soundcloud  = esc_attr( get_option('soundcloud_handler') );
+		$linkedin    = esc_attr( get_option('linkedin_handler') );
 ?> 
 <!--- Start foucs-newspaper-social ---> 
 <div class="foucs-newspaper-social">

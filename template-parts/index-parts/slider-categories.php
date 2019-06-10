@@ -3,7 +3,7 @@
     <div class="artical-sild-name">
         <span class="silde-name text-uppercase">life style</span>
     </div>
-    <!---Start cats-carousel --->
+<!---Start cats-carousel --->
     <div class="cats-carousel">
         <?php
             $all_lifestyle_category = 'beauty,fitness,life,style,food';
@@ -20,19 +20,19 @@
                     $category_posts->the_post(); //Echo Post?>
                     <!-- Start item-->
                     <div class="item">
-                        <!-- Start slider-img-->
+ <!-- Start slider-img-->
                         <div class="slid-img overflow zoom">
                             <div class="post-img">
                                 <?php foucs_check_post_image()?>
                             </div>
                         </div><!-- End slider-img-->
-                        <!-- Stat slider-cat-name -->
+<!-- Stat slider-cat-name -->
                         <div class="slider-cat-name">
                             <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                 <?php the_category('<span>,</span>')// Echo Name Post ?>
                             </a>
                         </div><!-- End slider-cat-name -->
-                        <!-- Stat slider-title -->
+<!-- Stat slider-title -->
                         <div class="slider-title">
                             <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                 <?php the_title('<h2 class="text-capitalize post-title">', '</h2>')// Echo Name Post ?>

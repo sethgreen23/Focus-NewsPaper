@@ -14,46 +14,43 @@
                     // Start Loop
                     $post_ordring_rand->the_post(); // Echo Post?>
                     <div class="item">
-                        <!---Start slider image--->
+<!---Start slider image--->
                         <div class="post-img-upper overflow zoom">
                             <div class="post-img">
                                 <?php foucs_check_post_image()?>
                             </div>
                             <div class="overlay"></div>
-                            <!--- End slider image--->
-                            <!--- Start upper-slider-heading -->
+<!--- End slider image--->
+<!--- Start upper-slider-heading -->
                             <div class="upper-slider-heading">
-                                <!--- Start upper-slider-cat -->
+<!--- Start upper-slider-cat -->
                                 <div class="upper-slider-cat">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                         <?php the_category('<span>,</span>')// Echo Name Post ?>
                                     </a>
-                                </div>
-                                <!--- End upper-slider-cat -->
-                                <!--- Start upper-slider-title -->
+                                </div><!--- End upper-slider-cat -->
+<!--- Start upper-slider-title -->
                                 <div class="upper-slider-title">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                         <?php the_title('<h2 class="text-capitalize post-title">', '</h2>')// Echo Name Post ?>
                                     </a>
-                                </div>
-                                <!--- End upper-slider-title -->
-                                <!-- Start post-author -->
+                                </div><!--- End upper-slider-title -->
+<!-- Start post-author -->
                                 <div class="post-author">
                                     <i class="fas fa-user"></i>
                                     <span class="name-author text-capitalize">
                                         <?php esc_url(the_author_posts_link()) // Echo Name Author Wraiting Post?>
                                     </span>
                                 </div><!-- End post-author -->
-                                <!-- start post-view -->
+<!-- start post-view -->
                                 <div class="post-view">
                                     <!---<i class="fab fa-gripfire"></i>-->
                                     <i class="fab fa-gripfire"></i>
                                     <span class="view">
                                         <?php foucs_post_views() //Get The Post Views?>
                                     </span>
-                                </div>
-                                <!-- End post-view -->
-                                <!-- Start post-comment -->
+                                </div><!-- End post-view -->
+<!-- Start post-comment -->
                                 <div class="post-comment">
                                     <i class="fas fa-comment"></i>
                                     <span class="comment text-capitalize">
@@ -63,7 +60,7 @@
                                 <!-- End post-comment -->
                             </div><!--- End upper-slider-heading -->
                         </div><!--- End post-img-upper overflow zoom-->
-                    </div>
+                    </div><!--- End item-->
                 <?php    
                 } // End While
             } // End If
@@ -92,39 +89,36 @@
                             <div class="post-img">
                                 <?php foucs_check_post_image()?>
                             </div>
-                            <!--- End slider image--->
+<!--- End slider image--->
                             <div class="overlay"></div>
-                            <!--- Start down-slider-heading -->
+<!--- Start down-slider-heading -->
                             <div class="down-slider-heading">
-                                <!--- Start down-slider-cat -->
+<!--- Start down-slider-cat -->
                                 <div class="down-slider-cat">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                         <?php the_category('<span>,</span>')// Echo Name Post ?>
                                     </a>
-                                </div>
-                                <!--- End down-slider-cat -->
-                                <!--- Start down-slider-title -->
+                                </div><!--- End down-slider-cat -->
+<!--- Start down-slider-title -->
                                 <div class="down-slider-title">
                                     <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                         <?php the_title('<h2 class="text-capitalize post-title">', '</h2>')// Echo Name Post ?>
                                     </a>
-                                </div>
-                                <!--- End down-slider-title -->
-                                <!-- Start post-author -->
+                                </div><!--- End down-slider-title -->
+<!-- Start post-author -->
                                 <div class="post-author">
                                     <i class="fas fa-user"></i>
                                     <span class="name-author text-capitalize">
                                         <?php esc_url(the_author_posts_link()) // Echo Name Author Wraiting Post?>
                                     </span>
                                 </div><!-- End post-author -->
-                                <!-- start post-view -->
+<!-- start post-view -->
                                 <div class="post-view">
                                     <i class="fab fa-gripfire"></i>
                                     <span class="view">
                                         <?php foucs_post_views() //Get The Post Views?>
                                     </span>
-                                </div>
-                                <!-- End post-view -->
+                                </div><!-- End post-view -->
                             </div><!-- End down-slider-heading -->
                         </div><!-- End ppost-img-down overflow zoom" -->
                     </div>
@@ -135,7 +129,7 @@
             wp_reset_query();
         ?>
     </div><!--- End down-silder --->
-    <!--- Start Slider Arrow  --->
+<!--- Start Slider Arrow  --->
     <button class="arrow-next slick-arrow" type="button" aria-label="Next" aria-hidden="true">
             <i class="fas fa-angle-right"></i>
     </button>

@@ -28,14 +28,22 @@ class Foucs_Top_Post_Widgit extends WP_widget {
 
         <p> 
             <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>">Title: </label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" value="<?php echo esc_attr( $title ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'title' ) ) ?>" 
+                value="<?php echo esc_attr( $title ) ?>">
         </p>
 
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>">PostNumber: </label>
-            <input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
-            name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" value="<?php echo esc_attr( $post_num ) ?>">
+            <input 
+                type="text" 
+                class="widefat" 
+                id="<?php echo esc_attr( $this->get_field_id( 'post_num' ) ) ?>" 
+                name="<?php echo esc_attr( $this->get_field_name( 'post_num' ) ) ?>" 
+                value="<?php echo esc_attr( $post_num ) ?>">
         </p>
     <?php
     }
@@ -73,14 +81,13 @@ class Foucs_Top_Post_Widgit extends WP_widget {
                     while($top_post_query->have_posts()){
                         $top_post_query->the_post(); //Echo Post?>
                         <div class="body-post">
-                            <!-- Start top post img --->
+<!-- Start top post img --->
                             <div class="img-top overflow zoom">
                                 <div class="post-img">
                                     <?php foucs_check_post_image()?>
                                 </div>
-                            </div>
-                            <!-- End top post img --->
-                            <!-- Start top post title --->
+                            </div><!-- End top post img --->
+<!-- Start top post title --->
                             <div class="top-post-title">
                                 <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                     <?php the_title('<h2 class="text-capitalize post-title">', '</h2>')// Echo Name Post ?>
