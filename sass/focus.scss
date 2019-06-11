@@ -45,15 +45,21 @@
 /*** END ARTICAL POST ***/
 
 /*** END ARTICAL POST  TAB ***/
+
+
 @import "page/cat-tab/category-tab";
 @import "page/cat-tab/world-tab";
 @import "page/cat-tab/tech-tab";
 @import "page/cat-tab/gallery-tab";
 @import "page/cat-tab/popular-tab";
+
+
 /*** END ARTICAL POST TAB ***/
 
 
 /*** Start Sidebar Widget ***/
+
+
 @import "layout/widgets/body-widget";
 @import "layout/widgets/social_link";
 @import "layout/widgets/archive";
@@ -68,12 +74,18 @@
 @import "layout/widgets/video-widget";
 @import "layout/widgets/tag-widget";
 @import "layout/widgets/foucs-top-post";
+@import "layout/widgets/foucs-facebook-widget";
+@import "layout/widgets/foucs-youtube-widget";
 @import "layout/widgets/foucs-calender";
+
+
 /*** End Sidebar Widget ***/
 
 
 
 /*** Start FOOTER ***/
+
+
 @import "layout/footer/footer";
 @import "layout/footer/popular-post";
 @import "layout/footer/category";
@@ -82,6 +94,9 @@
 @import "layout/footer/about-us";
 @import "layout/footer/social-link";
 @import "layout/footer/end-foter";
+
+
 /*** END FOOTER ***/
+
 
 /*** END FOUCS NEWSPAPER STYLE ***/

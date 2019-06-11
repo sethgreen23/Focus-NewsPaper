@@ -1,0 +1,19 @@
+/*** Start foucs-youtube-widget ***/
+.foucs-newspaper-sidebar {
+    .foucs_youtube_channel_widget {
+        >div {
+            text-align: center !important;
+            position: relative !important;
+            width: 251px !important;
+            height: 70px !important;
+            overflow: hidden !important;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            iframe {
+                margin-top: 15px !important;
+            }
+        }
+    }
+}
+/*** End foucs-youtube-widget ***/

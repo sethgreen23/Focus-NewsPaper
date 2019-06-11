@@ -34,7 +34,7 @@
                 </div><!--- End Articals Body --->
             </div><!--- End col-9 --->
             <div class="col-3">
-                <div class="home-sidebar">
+                <div class="foucs-newspaper-sidebar">
                     <?php 
                         if(is_active_sidebar('foucs-home-page-sidebar')) {
                             dynamic_sidebar('foucs-home-page-sidebar');
