@@ -14,3 +14,5 @@ require get_template_directory() . '/inc/theme-file/widgets/foucs-social-link.ph
 require get_template_directory() . '/inc/theme-file/widgets/foucs-category-widget.php';
 require get_template_directory() . '/inc/theme-file/widgets/foucs-tag-cloud-chang.php';
 require get_template_directory() . '/inc/theme-file/widgets/foucs-calender.php';
+require get_template_directory() . '/inc/theme-file/widgets/foucs-facebook-widget.php';
+require get_template_directory() . '/inc/theme-file/widgets/foucs-youtube-widget.php';

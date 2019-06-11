@@ -40,6 +40,8 @@ function foucs_js_files() {
     wp_enqueue_script('popper-js', get_template_directory_uri() . '/js/inc/popper.min.js', array(), false, true);
         // Add Bootstrap Script
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/inc/bootstrap.min.js', array(), false, true);
+        // Add platform Script
+    wp_enqueue_script('nplatform-js', get_template_directory_uri() . '/js/inc/platform.js', array(), false, true);
         // Add Nicescroll Script
     wp_enqueue_script('nicescroll-js', get_template_directory_uri() . '/js/inc/jquery.nicescroll.min.js', array(), false, true);
         // Add Easy Ticker Script

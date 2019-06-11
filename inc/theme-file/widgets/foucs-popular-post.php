@@ -52,7 +52,7 @@ class Foucs_Popular_Post_Widget extends WP_Widget {
     <?php    
     }
 
-     // update widget
+    // update widget
 	public function update( $new_instance, $old_instance ) {
 		
         $instance = array();
