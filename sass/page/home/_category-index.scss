@@ -70,7 +70,6 @@
                 }
                 .post-title {
                     font-family: $main-font;
-                    font-size: 15px;
                     color: $primary_color;
                     font-weight: 600;
                     @include prefixer (transition, all 0.3s);

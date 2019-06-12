@@ -97,3 +97,23 @@ function foucs_about_us_desc () {
 	return ob_get_clean();
 }
 
+
+/*
+    *** function Handelar Button Shere
+    *** Version: 1.0.4
+*/
+function foucs_share_this_post($title,$permalink){
+
+	$twitterHandler = ( get_option('twitter_handler') ? '&amp;via='.esc_attr( get_option('twitter_handler') ) : '' );
+		
+	$twitter   = 'https://twitter.com/intent/tweet?text=Hey! Read this: ' . $title . '&amp;url=' . $permalink . $twitterHandler .'';
+	$facebook  = 'https://www.facebook.com/sharer/sharer.php?u=' . $permalink;
+	$google    = 'https://plus.google.com/share?url=' . $permalink;
+	$pinterest =  'http://pinterest.com/pin/create/bookmarklet/?is_video=false&url=' . $permalink;
+	echo '<li><a href="'. $facebook .'" target="_blank" rel="nofollow"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>';
+	echo '<li><a href="'. $twitter  .'" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>';
+	echo '<li><a href="'. $pinterest  .'" target="_blank" rel="nofollow"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>';
+	echo '<li><a href="'. $google .'" target="_blank" rel="nofollow"><i class="fab fa-google-plus-g" aria-hidden="true"> </i></a></li>';
+			
+}
+

@@ -1,0 +1,185 @@
+/*** Start single-page-post ***/
+
+.single-post-body {
+    .single-page-post {
+        margin: 20px 0;
+        .body-post {
+            padding: 5px;
+            overflow: hidden;
+            background-color: $white_color;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (border-radius, 5px);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            .main-post {
+                .post-heading {
+                    width: 100%;
+                    overflow: hidden;
+                    .post-title {
+                        position: relative;
+                        display: inline-block;
+                        font-family: $main-font;
+                        color: $primary_color;
+                        font-weight: 600;
+                        width: 30em;
+                        height: 2em;
+                        overflow: hidden;
+                    }
+                }
+                .post-info {
+                    .post-author,
+                    .post-time,
+                    .post-edit-link {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                    .post-view,
+                    .post-comment {
+                        float: right;
+                        margin-left: 10px;
+                    }
+                    .post-time,
+                    .post-edit-link,
+                    .post-view,
+                    .post-comment {
+                        font-family: $second-font;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+
+                    .icon {
+                        i {
+                            margin-right: 3px;
+                            color: $icon_slid_color;
+                        }
+                    }
+                    .post-author {
+                        font-family: $main-font;
+                        font-weight: 700;
+                        a {
+                            text-decoration: none;
+                            color: $primary_color;
+                            @include prefixer (transition, all 0.3s);
+                            &:hover {
+                                color: $secondary_color;
+                                @include prefixer (transition, all 0.3s);
+                            }
+                        }
+                    }
+                    .post-comment {
+                        .comment {
+                            a {
+                                text-decoration: none;
+                                color: $primary_color;
+                                @include prefixer (transition, all 0.3s);
+                                &:hover {
+                                    color: $secondary_color;
+                                    @include prefixer (transition, all 0.3s);
+                                }
+                            }
+                        }
+                    }
+                    .post-edit-link {
+                        text-decoration: none;
+                        color: $primary_color;
+                        @include prefixer (transition, all 0.3s);
+                        i {
+                            color: $icon_slid_color;
+                        }
+                        &:hover {
+                            color: $secondary_color;
+                            @include prefixer (transition, all 0.3s);
+                        }
+                    }
+                }
+                .single-post-img {
+                    width: 809px;
+                    display: inline-block;
+                    overflow: hidden;
+                    margin: 10px 0;
+                    @include prefixer (border-radius, 15px);
+                    .post-img {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        display: inline-block;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                        }
+                    }
+                }
+                .post-content {
+                    width: 100%;
+                    margin-top: 10px 0;
+                    overflow: hidden;
+                    p {
+                        color: $primary_color;
+                        font-family: $main-font;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 2;
+                    }
+                    .wp-block-quote {
+                        width: 99.5%;
+                        background: $quote_color;
+                        @include prefixer (border-radius, 5px);
+                        @include prefixer (border-left, 8px solid $secondary_color);
+                        @include prefixer (box-shadow, 1px 1px 3px 1px $primary_color);
+                        p {
+                            font-family: $second-font;
+                            color: $primary_color;
+                            padding: 5px;
+                            font-weight: 700;
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                            line-height: 2;
+                        }
+                    }
+                    ul,
+                    ol {
+                       li {
+                            font-family: $second-font;
+                            color: $primary_color;
+                            padding: 5px;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 2;
+                            &::before {
+                                content: "\f105";
+                                position: relative;
+                                font-family: $font_awesome;
+                                font-weight: 900;
+                                font-size: 15px;
+                                color: $icon_slid_color;
+                                margin-right: 5px;
+                            }
+                       }
+                    }
+                    ol {
+                       li {
+                            &::before {
+                                content: none;
+                            }
+                       } 
+                    }
+                    .wp-block-image {
+                        img {
+                            @include prefixer (border-radius, 15px);
+                        }
+                        figcaption {
+                            font-family: $main-font;
+                            color: #828282;
+                            padding: 5px;
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** End single-page-post ***/

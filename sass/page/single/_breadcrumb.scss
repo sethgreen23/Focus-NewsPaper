@@ -1,0 +1,51 @@
+/*** Start breadcrumb-post ***/
+
+.single-post-container {
+    .breadcrumb-post {
+        margin: 20px 0;
+        .breadcrumb {
+            background-color: $white-color;
+            @include prefixer (border, 1px solid $border_color);
+            @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+            .breadcrumb-item {
+                font-family: $second-font;
+                font-size: 18px;
+                color: $primary_color;
+                font-weight: 600;
+                a {
+                    text-decoration: none;
+                    color: $primary_color;
+                    @include prefixer (transition, all 0.3s);
+                    &:hover {
+                        color: $secondary_color;
+                        @include prefixer (transition, all 0.3s);
+                    }
+                    i {
+                        font-size: 22px;
+                    }
+                }
+                &::before {
+                    content: "\f101";
+                    position: relative;
+                    font-family: $font_awesome;
+                    font-weight: 900;
+                    font-size: 18px;
+                    color: $secondary_color;
+                }
+                &:first-child {
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+            .active {
+                color: #6c757d;
+                font-family: $second-font;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/*** End breadcrumb-post ***/
