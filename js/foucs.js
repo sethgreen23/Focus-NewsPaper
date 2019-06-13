@@ -75,7 +75,8 @@ jQuery(document).ready( function($){
         }
     });
 
-    window.onload = function() {  
+    window.onload = function() { 
+      clock(); 
     function clock() {
     var now = new Date();
     var TwentyFourHour = now.getHours();
@@ -98,7 +99,30 @@ jQuery(document).ready( function($){
     document.getElementById('timeNow').innerHTML = hour+':'+min+':'+sec +' '+mid ;
         setTimeout(clock, 1000);
     }
-    clock();
-}
+  }
+    
+    $('.single-carousel').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: false,
+      arrows: false,
+      mobileFirst: true,
+     /* autoplay: true,
+      autoplaySpeed: 3000,*/
+   });
+
+  
+
+  $('.silder-content').slick({
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow:'.arrow-prev',
+    nextArrow:'.arrow-next',
+
+  });
+    
 
 });

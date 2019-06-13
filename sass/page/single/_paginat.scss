@@ -1,0 +1,56 @@
+/***  START SINGLE PAGE PAGINATIONS    ***/
+.single-post-pagint {
+    .prev-post,
+    .nxt-post {
+        background-color: $white-color;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 700;
+        display: inline-block;
+        padding: 10px;
+        width: 49%;
+        height: 6em;
+        line-height: 3em;
+        margin: 20px 0;
+        overflow: hidden;
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        @include prefixer (transition, all 0.3s);
+        a {
+            text-decoration: none;
+            color: $primary_color;
+        }
+        i {
+            margin: 10px;
+        }
+        &:hover {
+            a {
+                color: $secondary_color;
+                @include prefixer (transition, all 0.3s);
+            }
+        }
+        .prev-masg,
+        .nex-masg {
+            color: $single-post-icon;
+        }
+        .nex-masg {
+            float: right;
+        }
+    }
+    .prev-post {
+        float: left;
+        a {
+            float: left;
+        }
+    }
+    .nxt-post {
+        float: right;
+        a {
+            float: right;
+        }
+    }
+ }
+
+
+
+/***  END SINGLE PAGE PAGINATIONS    ***/

@@ -117,3 +117,53 @@ function foucs_share_this_post($title,$permalink){
 			
 }
 
+
+/*
+    *** function To Pagination Name Post 
+    *** Pagination Single Page Post
+*/
+
+function foucs_patination_single_posts_title() {?>
+    <div class="prev-post">
+        <?php
+            if (get_previous_post_link()) {
+                previous_post_link('%link', '<i class="fas fa-angle-double-left"></i> %title');
+            } else {
+                echo '<span class="prev-masg">This is Last Post</span>';
+            }
+        ?>
+    </div>
+    <div class="nxt-post">
+        <?php
+            if(get_next_post_link()) {
+                next_post_link('%link', '%title <i class="fas fa-angle-double-right"></i>');
+            } else {
+                echo '<span class="nex-masg">This is Last Post</span>';
+            }
+        ?>
+    </div>
+    <?php
+}
+
+/*
+    *** function To Pagination Number 
+    *** Pagination Categories Page Post
+*/
+
+function foucs_pagination_number () {
+    global $wp_query; // Make [$wp_query] Globale
+	$all_pages = $wp_query->max_num_pages; // Get All Posts
+    $current_pages = esc_html(max(1, get_query_var('paged'))); //Get Current Page
+    
+    if($all_pages > 1) { // Check If Total Page >1
+		return paginate_links(array(
+			'base'     			 => esc_url(get_pagenum_link() . '%_%'),
+			'format'             => '?paged=%#%',
+			'current'   		 => $current_pages,
+			'mid_size'           => 2,
+            'end_size' 			 => 3,
+			'prev_text'          => __('<i class="fas fa-angle-double-left"></i>'),
+			'next_text'          => __('<i class="fas fa-angle-double-right"></i>'),
+		));
+	}
+}

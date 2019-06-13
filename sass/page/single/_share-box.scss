@@ -1,0 +1,8 @@
+/*** Start Share Box ***/
+.single-post-container {
+    @extend .link-bttn-share;
+    .link-post-btn-share {
+        @include prefixer (border, 1.7px solid $border_color);
+    }
+}
+/*** End Share Box ***/

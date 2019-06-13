@@ -1,0 +1,303 @@
+/*** START  COMMENT USER SECTION ***/
+
+.comment-count {
+    font-family: $main_font;
+    color: $primary_color;
+    font-weight: 800;
+    margin-left: 5px;
+    background-color: $white-color;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 2rem;
+    @include prefixer (border, 1px solid $border_color);
+    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+}
+
+.foucs-single-comments {
+    font-family: $main_font;
+    color: $primary_color;
+    font-weight: 600;
+    margin-left: 5px;
+    background-color: $white-color;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 2rem;
+    overflow: hidden;
+    @include prefixer (border, 1px solid $border_color);
+    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+    .foucs-comments-list {
+        margin-top: 30px;
+        position: relative;
+        padding: 5px;
+        li {
+            margin-bottom: 15px;
+            display: block;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                top: 0;
+                left: 46px;
+                background-color: $primary_color;
+            }
+        }
+        .depth-1,
+        .byuser {
+            .comment-body {
+                width: 55em;
+                margin-left: 8rem;
+                position: relative;
+                @include prefixer (box-shadow, 0 1px 1px $box-shadow);
+                &::before {
+                    content: '';
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    display: block;
+                    @include prefixer (border-width, 10px 12px 10px 0);
+                    @include prefixer (border-style, solid);
+                    @include prefixer (border-color, transparent $primary_color);
+                    top: 1em;
+                    left: -11px;                 
+                }
+                .comment-awaiting-moderation {
+                    display: none;
+                }
+                .comment-author {
+                    .avatar {
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        z-index: 107;
+                        margin-left: -9em;
+                        @include prefixer (border, 1px solid $primary_color);
+                        @include prefixer (border-radius, 4px);
+                        @include prefixer (box-shadow, 0 1px 2px $box-shadow);
+                        overflow: hidden;
+                        line-height: 2.5em;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .fn {
+                        position: relative;
+                        display: inline-block;
+                        margin-left: 15px;
+                        float: left;
+                        margin-right: 10px;
+                        text-transform: capitalize;
+                        font-family: $main-font;
+                        color: $secondary_color;
+                        font-size: 16px;
+                        font-weight: 600;
+                        a {
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            font-family: $main-font;
+                            color: $secondary_color;
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                    }
+                    .says {
+                        display: none;
+                    }
+                }
+                .comment-meta {
+                    background: $primary_color;
+                    padding: 0 12px;
+                    overflow: hidden;
+                    height: 2.5em;
+                    @include prefixer (border-radius, 4px 4px 0 0);
+                    padding-right: 3.2em;
+                    margin-bottom: 1.5px;
+                    line-height: 2.5em;
+                    a,
+                    .comment-edit-link {
+                        text-decoration: none;
+                        float: right;
+                        margin-left: 6px;
+                        color: $white-color; 
+                    }
+                    .comment-edit-link {
+                        color: $secondary_color; 
+                        @include prefixer (transition, all 0.3s);
+                        &:hover {
+                            color: $white-color;
+                            @include prefixer (transition, all 0.3s);
+                        }
+                    }
+                }
+                p {
+                    background: $primary_color;
+                    padding: 12px;
+                    font-family: $main-font;
+                    font-size: 15px;
+                    color: $white-color;
+                    font-size: 15px;
+                    font-weight: 500;
+                    @include prefixer (border-radius, 0 0 4px 4px);
+                    overflow: hidden;
+                    height: 7em;
+                }
+                .reply {
+                    a {
+                        text-decoration: none;
+                        color: $white-color;
+                        @include prefixer (transition, all 0.3s);
+                        &:hover {
+                            @include prefixer (transition, all 0.3s);
+                            color: $secondary_color; 
+                        }
+                    }
+                    .comment-reply-link {
+                        float: right;
+                        margin-top: -9.7em;
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .children {
+                padding-left: 11rem;
+                clear: both;
+                margin-top: 27px;
+                .depth-2,
+                .byuser {
+                    .comment-body {
+                        width: 48em;
+                        .comment-meta {
+                            margin-bottom: 1.5px;
+                            padding-right: 3.3em;
+                            .comment-metadata {
+                                margin-right: -3em;
+                            }
+                        }
+                    }
+                }
+                .depth-2{
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 3px;
+                        width: 9em;
+                        background-color: $primary_color;
+                        left: -8.05em;
+                        top: 47px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* 
+    =================================
+      END COMMENT USER SECTION
+    =================================
+*/
+/* 
+    =========================
+      START  COMMENT FORM
+    =========================
+*/
+
+.foucs-comment-form {
+    margin-top: 30px;
+    background-color: $white-color;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2em;
+    @include prefixer (border, 1px solid $border_color);
+    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+    .comment-respond {
+        h3 {
+            display: inline-block;
+            text-transform: capitalize;
+            color: $primary_color;
+            padding: 10px;
+            margin-bottom: 0.77em;
+            i {
+                color: $secondary_color;
+                margin-right: 5px;
+            }
+        }
+        form {
+            .input-group {
+                margin-bottom: 10px;
+                span {
+                    background: $primary_color;
+                    width: 30px;
+                    height: 40px;
+                    position: relative;
+                    @include prefixer(border-radius, 15px 0 0 15px);
+                    i {
+                        color: $btn-form-color;
+                        line-height: 40px;
+                        margin-left: 8px;
+                    }
+                }
+                .form-control {
+                    background-color: $primary_color;
+                    @include prefixer(border, 1px solid $btn-form-color);
+                    &:focus {
+                        @include prefixer(border, 1px solid $btn-form-color);
+                        @include prefixer(border-color, none);
+                        outline:0;
+                        @include prefixer(box-shadow, none);
+                    }
+                    &::-webkit-input-placeholder{
+                        color: $white-color;
+                    }
+                    &::-moz-input-placeholder{
+                        color: $white-color;
+                    }
+                    &::-o-input-placeholder{
+                        color: $white-color;
+                    }
+                }
+                input {
+                    @include prefixer(border-radius, 0 15px 15px 0);
+                    height: 40px;
+                    color: $btn-form-color;
+                }
+                textarea {
+                    @include prefixer(border-radius, 15px);
+                    color: $btn-form-color;
+                    height: 15rem;
+                }
+            }
+            .name-foucs-user {    
+                float: left;
+            }
+            .mail-foucs-user,
+            .web-foucs-user {
+                float: right;
+            }
+            .foucs-btn {
+                background: $primary_color;
+                color: $btn-form-color;
+                padding: 10px;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 500;
+                margin-left: 20px;
+                @include prefixer(border, none);
+                @include prefixer(border-radius, 8px);
+                @include prefixer (transition, all 0.3s);
+                cursor: pointer;
+                &:hover {
+                    background: $secondary_color;
+                    color: $white-color;
+                    @include prefixer (transition, all 0.3s);
+                }
+            }
+        }
+    }
+}
+/*** END  COMMENT FORM ***/

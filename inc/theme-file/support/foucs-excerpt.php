@@ -15,7 +15,7 @@ function foucs_post_langht($length) {
 	if(is_author()) {
 		return 30;
 	} elseif (is_category()){
-		return 10; 
+		return 25; 
 	} elseif (is_home()){
 		return 20;
 	} else {

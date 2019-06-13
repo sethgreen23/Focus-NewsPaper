@@ -23,10 +23,11 @@
                             the_post();
                             get_template_part( 'template-parts/single-parts/posts');
                             get_template_part( 'template-parts/single-parts/share-box');
-                            get_template_part( 'template-parts/single-parts/paginat');
-                            get_template_part( 'template-parts/single-parts/slider');
                         } // End While Loop
-                    } // End If ?>
+                    } // End If
+                    get_template_part( 'template-parts/single-parts/paginat'); 
+                    get_template_part( 'template-parts/single-parts/single-slider');
+                ?>
                 </div><!--- End single-post-body --->
             </div><!--- End col-9 --->
             <div class="col-3">
@@ -41,6 +42,14 @@
                 </div>
             </div>
         </div><!--- End row --->
+        <div class="row">
+            <div class="col-12">
+                <!-- Start Comment Area-->
+                <div class="com-area">
+                    <?php comments_template(); //Show Comment Form ?> 
+                </div><!-- End Comment Area-->
+            </div>
+        </div>
     </div><!--- End container --->
 </div><!--- End Single Post Section--->
 

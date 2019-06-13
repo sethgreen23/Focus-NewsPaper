@@ -1,0 +1,100 @@
+/*
+    =========================================
+        Start Componed Style Button Share
+    ========================================
+*/
+
+
+.link-bttn-share {
+    .link-post-btn-share {
+        .butn-shere {
+            width: 320px;
+            height: 60px;
+            left: 50%;
+            margin-top: 3em;
+            position: relative;
+            display: inline-block;
+            @include prefixer(transform, translate(-50%,-50%));
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f1e0";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                color: $white-color;
+                background: linear-gradient(45deg, $facebook, $instagram, $googleplus, $twitter);
+                @include prefixer(border-radius, 30px);
+                font-size: 50px;
+                margin: 0 2px;
+                text-align: center;
+                line-height: 1.2;
+                @include prefixer(transition, 0.5s);
+                z-index: 1;
+            }
+            &:hover {
+                &::before {
+                    width: 60px;
+                }
+            }
+            li {
+                position: absolute;
+                @include prefixer(transition, 1s);
+                a{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    background: $secondary_color;
+                    color: $primary_color;
+                    margin: 0 2px;
+                    @include prefixer(border-radius, 50%);
+                    font-size: 30px;
+                    @include prefixer(transition, 2s);
+                    &:hover {
+                        i {
+                            color: $white-color;
+                        }    
+                    }
+                }
+            }
+            &:hover {
+                li {
+                    &:nth-child(1) {
+                        a {
+                            @include prefixer(transform, translateX(64px) rotate(360deg));
+                            @include prefixer(transition-delay, 0.8s);
+                        }
+                        
+                    }
+                    &:nth-child(2) {
+                        a {
+                            @include prefixer(transform, translateX(128px) rotate(360deg));
+                            @include prefixer(transition-delay, 0.6s);
+                        }
+                    }
+                    &:nth-child(3) {
+                        a {
+                            @include prefixer(transform, translateX(192px) rotate(360deg));
+                            @include prefixer(transition-delay, 0.4s);
+                        }
+                    }
+                    &:nth-child(4) {
+                        a {
+                            @include prefixer(transform, translateX(256px) rotate(360deg));
+                            @include prefixer(transition-delay, 0.2s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+    =========================================
+        End Componed Style Button Share
+    ========================================
+*/

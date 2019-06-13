@@ -19,6 +19,8 @@
 @import "help/mixins";
 //- Globale File
 @import "layout/globale";
+//- Componed File
+@import "componed/button-share";
 
 /*** START FOUCS NEWSPAPER STYLE ***/
 
@@ -62,9 +64,22 @@
 
 @import "page/single/breadcrumb";
 @import "page/single/posts";
-
+@import "page/single/share-box";
+@import "page/single/paginat";
+@import "page/single/slider";
+@import "layout/comment-form";
 
 /*** END SINGLE POST ***/
+
+
+/*** START CATEGORIES PAGE  ***/
+
+@import "page/categories/slider";
+@import "page/categories/post";
+@import "page/categories/paginat";
+
+
+/*** END CATEGORIES PAGE ***/
 
 
 /*** Start Sidebar Widget ***/

@@ -1,0 +1,87 @@
+/***  START CATEGOR PAGE PAGINATIONS  ***/
+.category-paginat {
+    .the-paginat {
+        margin-top: 2em;
+        width: 100%;
+        height: 3.2em;
+        overflow: hidden;
+        display: flex;
+        a {
+            text-decoration: none;
+        }
+        .page-numbers {
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            background: $primary_color;
+            color: $white-color ;
+            margin: 5px;
+            @include prefixer (border-radius, 4px);
+            @include prefixer (box-shadow, inset 0 5px 10px $primary_color);
+            &:hover {
+                color: $white-color;
+            }
+            &:hover {
+                color: $white-color;
+                -webkit-text-shadow :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;
+                -moz-text-shadow    :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover; 
+                -o-text-shadow      :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;             
+                text-shadow         :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;
+            }
+        }
+        .current {
+            color: $color-paginat-cat-hover;
+            -webkit-text-shadow     :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;
+            -moz-text-shadow        :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover; 
+            -o-text-shadow          :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;             
+            text-shadow             :   0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover,
+                                        0 0 20px $color-paginat-cat-hover;
+        }
+    }
+}
+
+
+/***  End CATEGOR PAGE PAGINATIONS ***/
