@@ -1,6 +1,6 @@
 <?php
     /*
-		This is the template for the hedaer & Categories
+		This is the template for the hedaer Author Page
 		
 		@package foucs_newspaper
 	*/

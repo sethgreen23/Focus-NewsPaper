@@ -1,0 +1,58 @@
+/*** Start Author Comment  ***/
+.head-comment {
+    padding: 8px;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    background-color: $white_color;
+    @include prefixer (border, 1px solid $border_color);
+    @include prefixer (border-radius, 5px);
+    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+}
+.author-comment {
+    padding: 8px;
+    margin: 15px 0;
+    background-color: $white_color;
+    @include prefixer (border, 1px solid $border_color);
+    @include prefixer (border-radius, 5px);
+    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+    .comment {
+        .post-title {
+            a {
+                text-decoration: none;
+                font-family: $main-font;
+                font-size: 18px;
+                color: $primary_color;
+                font-weight: 600;
+                @include prefixer (transition, all 0.3s);
+                &:hover {
+                    color: $secondary_color;
+                    @include prefixer (transition, all 0.3s);
+                }
+            }
+        }
+        .post-date {
+            i {
+                color: $icon_slid_color ;
+                margin-right: 3px;
+            }
+            .date {
+                font-family: $second-font;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .post-content {
+            width: 100%;
+            margin-top: 10px;
+            overflow: hidden;
+            p {
+                color: $content_color;
+                font-family: $main-font;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+/*** End  Author Comment  ***/

@@ -33,8 +33,8 @@
             <div class="col-3">
                 <div class="foucs-newspaper-sidebar">
                     <?php 
-                        if(is_active_sidebar('foucs-home-page-sidebar')) {
-                            dynamic_sidebar('foucs-home-page-sidebar');
+                        if(is_active_sidebar('foucs-single-post-sidebar')) {
+                            dynamic_sidebar('foucs-single-post-sidebar');
                         } else {
                             get_sidebar();
                         }

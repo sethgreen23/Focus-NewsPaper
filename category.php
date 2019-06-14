@@ -5,7 +5,7 @@
 		// @package foucs_newspaper
 	*/
 ?>
-<?php get_header('cats'); ?>
+<?php get_header(); ?>
 <!---Start categor-silder-container --->
 <div class="categor-silder-container">
     <div class="container-fluid">
@@ -31,8 +31,8 @@
             <div class="col-3">
                 <div class="foucs-newspaper-sidebar">
                     <?php 
-                        if(is_active_sidebar('foucs_category_sidebar')) {
-                            dynamic_sidebar('foucs_category_sidebar');
+                        if(is_active_sidebar('foucs-category-page-sidebar')) {
+                            dynamic_sidebar('foucs-category-page-sidebar');
                         } else {
                             get_sidebar();
                         }

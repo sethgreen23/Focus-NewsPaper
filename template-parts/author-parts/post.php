@@ -1,14 +1,34 @@
-<!--- Start categories-posts --->
-<div class="categories-posts">
-<!--- Start row --->
-    <div class="row">
+<?php 
+    $author_posts_per_page = 1;
+    $author_posts_arg = array(
+        'author'         => get_the_author_meta('ID'),
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'posts_per_page' => $author_posts_per_page,
+        'post_status'    => 'publish',
+    );
+    $author_posts = new WP_Query($author_posts_arg);
+?>
+<div class="author-posts">
+    <div class="author-card">
         <?php
-            if(have_posts()){ // Check Have Posts Or No
-                while(have_posts() ){ 
+            if($author_posts->have_posts()){ // Check Have Posts Or No
+                $count_latst_post = count_user_posts(get_the_author_meta('ID')); ?>
+                <h3 class="head-post text-capitalize">
+                    <?php
+                        // Chick If Number Posts >= Counter Post
+                        if ($count_latst_post >= $author_posts_per_page) {?>
+                            <span> Latest <strong> <?php echo $author_posts_per_page ?></strong> Post </span>
+                        <?php       
+                        } else {
+                            echo '<span> The Latest Post </span>';
+                        }
+                    ?>  
+                </h3>
+                <?php
+                while($author_posts->have_posts() ){ 
                     // Start Loop
-                    the_post(); // Echo Post?>
-
-                <div class="categories-card col-6">
+                    $author_posts->the_post(); // Echo Post?>
 <!--- Start card --->
                     <div class="card">
 <!--- Start imge-card overflow zoom --->
@@ -26,16 +46,6 @@
                                 </div><!--- End  date--->
 <!--- Start menu-card --->
                                 <ul class="menu-card">
-<!--- Start share --->
-                                    <li>
-                                        <div id="menu" class="fas fa-share"></a>
-                                    </li><!--- End share --->
-<!--- Start Like --->
-                                    <li>
-                                        <div id="menu" class="far fa-heart">
-                                            <span>100</span>
-                                        </div>
-                                    </li><!--- End Like --->
 <!--- Start Views --->
                                     <li>
                                         <div id="menu" class="far fa-eye">
@@ -53,34 +63,35 @@
                                         </a>
                                     </li><!--- End  comment--->
                                 </ul><!--- End menu-card--->
-<!--- Start card-content --->
+<!--- Start card-content--->
                                 <div class="card-content">
-                                    <!--- Start --->
+                                    <!--- Start content-card --->
                                     <div class="content-card">
                                         <!--- Start title --->
                                         <h3 class="title text-capitalize">
                                             <a href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">
                                                 <?php the_title()// Echo Name Post ?>
                                             </a>
-                                        </h3><!--- End title --->
+                                        </h3><!--- End title--->
                                         <!--- Start text --->
                                         <div class="text text-capitalize">
                                             <?php the_excerpt();?> 
-                                        </div><!--- End text--->
-                                        <!--- Start button --->
+                                        </div><!--- End text --->
+<!--- Start button --->
                                         <a class="button text-capitalize" href="<?php esc_url(the_permalink()) // Get The Link Of Post ?>">read more</a>
-                                    </div><!--- End button --->
-                                </div><!--- End card-content --->
+                                    </div><!--- End content-card--->
+                                </div><!--- End card-content--->
                                 <!--- Start caption-shadow --->
                                 <div class="caption-shadow"></div>
                                  <!--- End caption-shadow --->
                             </div><!--- End head-card --->
                         </div><!--- End imge-card overflow zoom --->
                     </div><!--- End Card --->
-                </div><!--- End categories-card col-6 --->
             <?php      
-            } // End While
-        } // End If
-    ?>
-    </div><!--- End row --->
-</div><!--- End categories-posts --->
+                    } // End While
+                } // End If
+                wp_reset_postdata(); 
+                wp_reset_query();
+            ?>
+    </div><!--- End author-card col-6 --->
+</div><!--- End author-posts --->
