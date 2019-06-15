@@ -1,0 +1,36 @@
+/*** Start page-not-foun ***/
+.page-not-foun {
+    .info-page {
+        .not-foun{
+            font-family: $second-font;
+            color: $primary_color;
+            font-size: 15em;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            strong {
+                color: $secondary_color;
+            }
+        }
+        .info {
+            .text {
+                font-family: $main-font;
+                color: $primary_color;
+                font-size: 2.5em;
+                font-weight: 600;
+                display: inline-block;
+                padding: 10px;
+                @include prefixer(border, 2px solid $primary_color);
+            }
+            .ask {
+                display: block;
+                font-family: $main-font;
+                color: $primary_color;
+                font-size: 1.5em;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+/*** End page-not-foun ***/

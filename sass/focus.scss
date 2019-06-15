@@ -28,25 +28,36 @@
 @import "layout/header";
 //- Slider
 @import "layout/slider";
+//- 404
+@import "page/not-found";
+
 
 /*** START ARTICAL POST ***/
 
-//- Latest News
+
 @import "page/home/latest-news";
-//- Old post
 @import "page/home/old-post";
-//- Top Post
 @import "page/home/top-post";
-//- Category Index
 @import "page/home/category-index";
-//- Slider Categories
 @import "page/home/slider-categories";
-// Latest Articales
 @import "page/home/latest-articale";
+
 
 /*** END ARTICAL POST ***/
 
-/*** END ARTICAL POST  TAB ***/
+
+
+/*** START SEARCH PAGE ***/
+
+
+@import "page/search/form";
+@import "page/search/page";
+
+
+/*** END SEARCH PAGE ***/
+
+
+/*** START ARTICAL POST  TAB ***/
 
 
 @import "page/cat-tab/category-tab";
@@ -83,7 +94,7 @@
 
 
 /*** START AUTHOR PAGE  ***/
-
+@import "page/author/info";
 @import "page/author/slider";
 @import "page/author/post";
 @import "page/author/comment";

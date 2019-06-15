@@ -5,7 +5,7 @@
         'meta_key'       => 'foucs_posts_views',
         'order'          => 'DESC',
         'orderby'		 => 'meta_value_num', // Ordring Number 
-        'posts_per_page' =>  1,
+        'posts_per_page' =>  5,
         'post_status'    => 'publish',
     ));
     $author_slider_post = new WP_Query($author_args);

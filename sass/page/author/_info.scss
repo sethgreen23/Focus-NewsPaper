@@ -1,0 +1,70 @@
+/*** Start Author Info ***/
+.author-info {
+    margin: 15px 0;
+    .my-info {
+        width: 100%;
+        overflow: hidden;
+        background-color: $white_color;
+        @include prefixer (border, 1px solid $border_color);
+        @include prefixer (border-radius, 5px);
+        @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+        .author-img {
+            margin: 15px 0;
+        }
+        .info-body{
+            width: 100%;
+            overflow: hidden;
+            .name {
+                color: $primary_color;
+                font-family: $main-font ;
+                font-weight: 600;
+            }
+            .descript {
+                color: $content_color;
+                font-family: $main-font;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .post-count,
+            .web-btn{
+                margin: 5px 0;
+            }
+            .post-count{
+                display: flex;
+                height: 25px;
+                background-color: $third-color;
+                @include prefixer(border-radius, 5px);
+                p,
+                span {
+                    margin: 0 5px;
+                }
+                p{
+                    color: $primary_color;
+                    font-family: $main-font;
+                    font-weight: 600;
+                }
+                span {
+                    color: $white_color;
+                    font-family: $second-font;
+                    font-weight: 400;
+                }
+            }
+            .web-btn {
+                font-family: $second-font;
+                font-weight: 400;
+                font-size: 20px;
+                background: $primary_color;
+                color: $secondary_color;
+                @include prefixer (transition, all 0.3s);
+                &:hover {
+                    background: $secondary_color;
+                    color: $primary_color;
+                    @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
+                    @include prefixer (transition, all 0.3s);
+                }
+            }
+        }
+    }
+}
+
+/*** End Author Info ***/

@@ -1,5 +1,5 @@
 <?php 
-    $author_posts_per_page = 1;
+    $author_posts_per_page = 10;
     $author_posts_arg = array(
         'author'         => get_the_author_meta('ID'),
         'orderby'        => 'date',

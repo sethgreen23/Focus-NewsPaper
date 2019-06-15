@@ -1,5 +1,12 @@
 /*** Start author-silder ***/
 .author-silder-body {
+    &:hover {
+        .arrow-prev,
+        .arrow-next {
+            @include prefixer (transition, all .3s ease-in-out);
+            display: inline-block !important;
+        }
+    }
     .silder-content {
         width: 100%;
         height: 25em;
@@ -76,9 +83,11 @@
     .arrow-next {
         position: absolute;
         top: 50%;
-        @include prefixer(border, none);
         background: none;
+        display: none !important;
         cursor: pointer;
+        @include prefixer(border, none);
+        @include prefixer (transition, all .3s ease-in-out);
         i {
             font-size: 3rem;
             color: $primary_color;
@@ -86,17 +95,19 @@
             width: 35px;
             height: 35px;
             line-height: 35px;
-            opacity: 0.5;
-            @include prefixer(border-radius, 10px);
-            &:hover {
-                color: $primary_color ;
-                background-color: $secondary_color;
-                opacity: 1;
-            }
         }
     }
     .arrow-next {
-        margin-left: 2.5em;
+        margin-left: 79.7em;
+        i {
+            @include prefixer(border-radius, 10px 0 0 10px);
+        }
+    }
+    .arrow-prev {
+        margin-left: -3px;
+        i {
+            @include prefixer(border-radius, 0 10px 10px 0);
+        }
     }
 }
 /*** End author-silder ***/

@@ -12,7 +12,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <?php //get_template_part( 'template-parts/author-parts/slider');?>
+                <?php get_template_part( 'template-parts/author-parts/slider');?>
             </div> <!--- col-12--->
         </div> <!--- row --->
     </div><!--- container-fluid --->
@@ -25,14 +25,15 @@
             <div class="col-9">
                 <!--- Start Articals Body-->
                 <div class="author-artical-body">
-                   <?php //get_template_part( 'template-parts/author-parts/post');?>
-                   <?php //get_template_part( 'template-parts/author-parts/comment');?>
+                   <?php get_template_part( 'template-parts/author-parts/post');?>
+                   <?php get_template_part( 'template-parts/author-parts/comment');?>
                 </div><!--- End Articals Body --->
             </div><!--- End col-9 --->
             <div class="col-3">
+                <!--- Start author-info --->  
                 <div class="author-info">
                    <?php get_template_part( 'template-parts/author-parts/author-info');?>
-                </div>
+                </div><!--- End author-info --->  
                 <div class="foucs-newspaper-sidebar">
                     <?php 
                         if(is_active_sidebar('foucs-author-page-sidebar')) {

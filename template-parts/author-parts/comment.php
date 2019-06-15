@@ -1,5 +1,5 @@
 <?php 
-$comment_per_page = 2;
+$comment_per_page = 10;
 $comment_argu = array(
     'user_id'           => get_the_author_meta('ID'),
     'status'            =>'approve',
@@ -14,7 +14,7 @@ $comments = get_comments($comment_argu);?>
     latest comments
 </h3>
 <?php
-if ($comments) {
+if ($comments) { // Check Have Comment Or No
     foreach($comments as $comment) { ?>
         <div class="author-comment">
             <div class="comment">

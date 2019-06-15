@@ -167,3 +167,34 @@ function foucs_pagination_number () {
 		));
 	}
 }
+
+/*
+    *** function To Get Author Descriptions 
+*/
+function author_description() {
+    if(get_the_author_meta('description')) {
+        echo the_author_meta('description'); // Print Description If Have
+    } else {
+        echo '<div class="alert alert-danger" role="alert">No Have Description</div>';
+    }
+}
+
+/*
+    *** function To Get Author Count Posts
+*/
+function author_count_post() {
+    if(get_the_author_posts() != 0) {
+        echo get_the_author_posts();
+    } else {
+        echo '<span> no publish posts yet </span>';
+    }
+}
+
+/*
+    *** function To echo Author Meta By User ID
+*/
+
+function author_meta_name($user_meta_name) {
+    $author_Id = get_the_author_meta('ID');
+    the_author_meta($user_meta_name,$author_Id);
+}
