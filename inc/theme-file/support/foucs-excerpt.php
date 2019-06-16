@@ -18,6 +18,8 @@ function foucs_post_langht($length) {
 		return 25; 
 	} elseif (is_home()){
 		return 20;
+	} elseif (is_search()) {
+		return 45;
 	} else {
 		return $length;
 	}
