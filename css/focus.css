@@ -1696,8 +1696,222 @@ img {
 /*** END ARTICAL POST ***/
 /*** START SEARCH PAGE ***/
 /*** Start search-form ***/
+.search-box {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 39px;
+  background-color: #222f3e;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.search-box:hover .input-search {
+  padding: 0 10px;
+  width: 260px;
+  caret-color: #ff9900;
+  -webkit-transition: width 0.4s linear;
+  -moz-transition: width 0.4s linear;
+  -o-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+.search-box:hover .icon-search {
+  background: #ff9900;
+  color: #222f3e;
+  line-height: 0;
+  padding-top: 7px;
+  margin-top: -5px;
+}
+.search-box .input-search {
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 24px;
+  -webkit-transition: width 0.4s linear;
+  -moz-transition: width 0.4s linear;
+  -o-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+.search-box a {
+  text-decoration: none;
+}
+.search-box .icon-search {
+  height: 30px;
+  width: 30px;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: #ff9900;
+}
+.search-box .icon-search i {
+  margin-left: 6px;
+}
+
 /*** End search-form ***/
 /*** Start search-page ***/
+.body-search-post {
+  margin: 15px 0;
+}
+.body-search-post .search-news {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.body-search-post .search-news .search-post {
+  margin: 10px 0;
+  padding: 5px;
+  width: 100%;
+  height: 12.3em;
+  overflow: hidden;
+  background-color: #ffffff;
+  -webkit-border: 1px solid rgba(204, 204, 204, 0.3);
+  -moz-border: 1px solid rgba(204, 204, 204, 0.3);
+  -o-border: 1px solid rgba(204, 204, 204, 0.3);
+  border: 1px solid rgba(204, 204, 204, 0.3);
+  -webkit-box-shadow: 1px 1px 3px 1px #1818188f;
+  -moz-box-shadow: 1px 1px 3px 1px #1818188f;
+  -o-box-shadow: 1px 1px 3px 1px #1818188f;
+  box-shadow: 1px 1px 3px 1px #1818188f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.body-search-post .search-news .search-post .search-post-img {
+  position: relative;
+  display: inline-block;
+  width: 14em;
+  height: 11em;
+}
+.body-search-post .search-news .search-post .search-post-img .post-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.body-search-post .search-news .search-post .search-post-img .post-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.body-search-post .search-news .search-post .search-post-title {
+  position: absolute;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.body-search-post .search-news .search-post .search-post-title a {
+  text-decoration: none;
+}
+.body-search-post .search-news .search-post .search-post-title .post-title {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #222f3e;
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .search-post-title .post-title:hover {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .post-author,
+.body-search-post .search-news .search-post .post-date,
+.body-search-post .search-news .search-post .post-comment,
+.body-search-post .search-news .search-post .post-view {
+  position: absolute;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 2.3em;
+  font-family: "Oswald", sans-serif;
+}
+.body-search-post .search-news .search-post .post-author i,
+.body-search-post .search-news .search-post .post-date i,
+.body-search-post .search-news .search-post .post-comment i,
+.body-search-post .search-news .search-post .post-view i {
+  margin-right: 3px;
+  color: #9b9797;
+}
+.body-search-post .search-news .search-post .post-author {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.body-search-post .search-news .search-post .post-author a {
+  text-decoration: none;
+  color: #222f3e;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .post-author a:hover {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .post-date {
+  margin-left: 8.75em;
+}
+.body-search-post .search-news .search-post .post-date .date {
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.body-search-post .search-news .search-post .post-comment {
+  margin-left: 14.85em;
+}
+.body-search-post .search-news .search-post .post-comment .comment a {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: #222f3e;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .post-comment .comment a:hover {
+  color: #ff9900;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.body-search-post .search-news .search-post .post-view {
+  margin-left: 21.3em;
+}
+.body-search-post .search-news .search-post .post-view i {
+  color: #ff0000;
+}
+.body-search-post .search-news .search-post .post-content {
+  position: absolute;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5em;
+  overflow: hidden;
+}
+.body-search-post .search-news .search-post .post-content p {
+  color: #8f8f8f;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
 /*** End search-page ***/
 /*** END SEARCH PAGE ***/
 /*** START ARTICAL POST  TAB ***/

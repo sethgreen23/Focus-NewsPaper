@@ -57,7 +57,9 @@
                         </div><!--- End search-post ---> 
             <?php    
                     } // End While
-                } // End If
+                } else {
+                    echo '<h3 class="alert alert-warning text-capitalize text-center" role="alert" >no have any results <i class="far fa-frown"></i></h3>';
+                }
                 wp_reset_postdata(); 
             ?>
         </ul><!--- End ul --->
