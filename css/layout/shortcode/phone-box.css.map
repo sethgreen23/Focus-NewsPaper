@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2BAA2B;AAC3B,uBAAuB",
+"sources": ["../../../sass/layout/shortcode/phone-box.scss"],
+"names": [],
+"file": "phone-box.css"
+}

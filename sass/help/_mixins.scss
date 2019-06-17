@@ -62,14 +62,21 @@
   }
   //- Big Large device
   @if $screen-size == lg-desktop {
-    @media (min-width: 1200px) and (max-width: 1365.98px) {
+    @media (min-width: 1200px) and (max-width: 1365.98px){
       @content;
     }
   }
   //- Big xLarge device
   @if $screen-size == xlg-desktop {
-    @media (min-width: 1366px) {
+    @media (min-width: 1366px) and (max-width: 1690px) {
       @content;
     }
   }
+  //- Big xxLarge device
+  @if $screen-size == xxlg-desktop {
+    @media (min-width : 1824px) {
+      @content;
+    }
+  }
+  
 };

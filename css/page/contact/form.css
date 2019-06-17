@@ -7,7 +7,7 @@ Error: Undefined variable: "$secondary_color".
 8:             display: inline-block;
 9:             p {
 10:                 position: relative;
-11:                 background: $secondary_color;
+11:                 background:$secondary_color;
 12:                 color: $white-color;
 13:                 display: inline-block;
 14:                 padding: 4px;
@@ -102,4 +102,4 @@ C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/t
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary_color\".\A         on line 11 of C:/xampp/htdocs/wordpress/wp-content/themes/focusnewspaper/sass/page/contact/form.scss\A \A 6:         .email-fild,\A 7:         .texarea-fild {\A 8:             display: inline-block;\A 9:             p {\A 10:                 position: relative;\A 11:                 background: $secondary_color;\A 12:                 color: $white-color;\A 13:                 display: inline-block;\A 14:                 padding: 4px;\A 15:                 bottom: 17px;\A 16:                 left: 6px;"; }
+  content: "Error: Undefined variable: \"$secondary_color\".\A         on line 11 of C:/xampp/htdocs/wordpress/wp-content/themes/focusnewspaper/sass/page/contact/form.scss\A \A 6:         .email-fild,\A 7:         .texarea-fild {\A 8:             display: inline-block;\A 9:             p {\A 10:                 position: relative;\A 11:                 background:$secondary_color;\A 12:                 color: $white-color;\A 13:                 display: inline-block;\A 14:                 padding: 4px;\A 15:                 bottom: 17px;\A 16:                 left: 6px;"; }

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAyB;AACzB,sBAAsB",
+"sources": ["../../../sass/layout/shortcode/mail-box.scss"],
+"names": [],
+"file": "mail-box.css"
+}

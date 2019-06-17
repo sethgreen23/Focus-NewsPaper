@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2BAA2B;AAC3B,wBAAwB",
+"sources": ["../../../sass/layout/shortcode/adress-box.scss"],
+"names": [],
+"file": "adress-box.css"
+}
