@@ -24,13 +24,7 @@
 		</div>
 
 		<div class="form-group col-12 texarea-fild">
-			<textarea 
-				name="message" 
-				id="message" 
-				class="form-control" 
-				placeholder="Your Message" 
-				required="required">	
-			</textarea>
+			<textarea name="message" id="message" class="form-control" placeholder="Your Message" required="required"></textarea>
 			<p class="form-control-msg">A Message is Required</p>
 		</div>
 		

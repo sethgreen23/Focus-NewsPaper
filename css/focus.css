@@ -5896,6 +5896,137 @@ img {
 
 /*** End end-Footer ***/
 /*** END FOOTER ***/
+/*** END CONTACT PAGE ***/
+/***  START CONTACT FORM   ***/
+.contactform-page .foucs-contact-form .name-fild,
+.contactform-page .foucs-contact-form .email-fild,
+.contactform-page .foucs-contact-form .texarea-fild {
+  display: inline-block;
+}
+.contactform-page .foucs-contact-form .name-fild p,
+.contactform-page .foucs-contact-form .email-fild p,
+.contactform-page .foucs-contact-form .texarea-fild p {
+  position: relative;
+  background: #ff9900;
+  color: #ffffff;
+  display: inline-block;
+  padding: 4px;
+  bottom: 17px;
+  left: 6px;
+  border-radius: 10px;
+  float: right;
+  display: none;
+}
+.contactform-page .foucs-contact-form .name-fild {
+  float: left;
+}
+.contactform-page .foucs-contact-form .email-fild {
+  float: right;
+}
+.contactform-page .foucs-contact-form .btn-contact-form {
+  background: #222f3e;
+  color: #f1c40f;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+  width: 15em;
+  -webkit-border: none;
+  -moz-border: none;
+  -o-border: none;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contactform-page .foucs-contact-form .btn-contact-form:hover {
+  background: #ff9900;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contactform-page .foucs-contact-form .btn-contact-form .text-info,
+.contactform-page .foucs-contact-form .btn-contact-form .text-success,
+.contactform-page .foucs-contact-form .btn-contact-form .text-danger {
+  display: inline-block;
+}
+.contactform-page form input {
+  height: 3.3em;
+}
+.contactform-page form textarea {
+  height: 15em;
+}
+.contactform-page form .form-group {
+  margin-bottom: 25px;
+}
+.contactform-page form .form-group .form-control {
+  background-color: #222f3e;
+  -webkit-border: 1px solid #f1c40f;
+  -moz-border: 1px solid #f1c40f;
+  -o-border: 1px solid #f1c40f;
+  border: 1px solid #f1c40f;
+}
+.contactform-page form .form-group .form-control:focus {
+  -webkit-border: 1px solid #f1c40f;
+  -moz-border: 1px solid #f1c40f;
+  -o-border: 1px solid #f1c40f;
+  border: 1px solid #f1c40f;
+  -webkit-border-color: none;
+  -moz-border-color: none;
+  -o-border-color: none;
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.contactform-page form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contactform-page form .form-group .form-control::-moz-input-placeholder {
+  color: #ffffff;
+}
+.contactform-page form .form-group .form-control::-o-input-placeholder {
+  color: #ffffff;
+}
+.contactform-page form .form-group input {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  height: 40px;
+  color: #f1c40f;
+}
+.contactform-page form .form-group textarea {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  color: #f1c40f;
+  height: 15rem;
+}
+.contactform-page form .form-control-msg {
+  display: none;
+}
+.contactform-page form .has-error .form-control-msg {
+  display: block;
+}
+.contactform-page form .js-show-feedback {
+  display: block;
+}
+
+/***  END CONTACT FORM   ***/
+/*** END CONTACT PAGE ***/
 /*** END FOUCS NEWSPAPER STYLE ***/
 
 /*# sourceMappingURL=focus.css.map */
