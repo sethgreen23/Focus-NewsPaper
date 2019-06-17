@@ -2,17 +2,35 @@
 	<form id="foucsContactForm" class="foucs-contact-form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 		<div class="form-group col-6 name-fild">
-			<input type="text" class="form-control" placeholder="Your Name" id="name" name="name">
+			<input 
+				type="text" 
+				class="form-control" 
+				placeholder="Your Name" 
+				id="name" 
+				name="name" 
+				required="required" >
 			<p class="form-control-msg">Your Name is Required</p>
 		</div>
 
 		<div class="form-group col-6 email-fild">
-			<input type="email" class="form-control" placeholder="Your Email" id="email" name="email">
+			<input 
+				type="email" 
+				class="form-control" 
+				placeholder="Your Email" 
+				id="email" 
+				name="email" 
+				required="required" >
 			<p class="form-control-msg">Your Email is Required</p>
 		</div>
 
 		<div class="form-group col-12 texarea-fild">
-			<textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+			<textarea 
+				name="message" 
+				id="message" 
+				class="form-control" 
+				placeholder="Your Message" 
+				required="required">	
+			</textarea>
 			<p class="form-control-msg">A Message is Required</p>
 		</div>
 		

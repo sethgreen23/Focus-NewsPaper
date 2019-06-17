@@ -1,0 +1,107 @@
+/***  START CONTACT FORM   ***/
+
+.contactform-page {
+    .foucs-contact-form {
+        .name-fild,
+        .email-fild,
+        .texarea-fild {
+            display: inline-block;
+            p {
+                position: relative;
+                background: $secondary_color;
+                color: $white-color;
+                display: inline-block;
+                padding: 4px;
+                bottom: 17px;
+                left: 6px;
+                border-radius: 10px;
+                float: right;
+                display: none;
+            }
+        }
+        .name-fild {    
+            float: left;
+        }
+        .email-fild {    
+            float: right;
+        }
+        .btn-contact-form {
+            background: $primary_color;
+            color: $btn-form-color;
+            padding: 10px;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 20px;
+            width: 15em;
+            @include prefixer(border, none);
+            @include prefixer(border-radius, 8px);
+            @include prefixer (transition, all 0.3s);
+            cursor: pointer;
+            &:hover {
+                background: $secondary_color;
+                color: $white-color;
+                @include prefixer (transition, all 0.3s);
+            }
+            .text-info,
+            .text-success,
+            .text-danger {
+                display: inline-block;
+            }
+
+        }
+    }
+    form {
+        input {
+            height: 3.3em;
+        }
+        textarea {
+            height: 15em;
+        }
+        .form-group {
+            margin-bottom: 25px;
+            .form-control {
+                background-color: $primary_color;
+                @include prefixer(border, 1px solid $btn-form-color);
+                &:focus {
+                    @include prefixer(border, 1px solid $btn-form-color);
+                    @include prefixer(border-color, none);
+                    outline:0;
+                    @include prefixer(box-shadow, none);
+                }
+                &::-webkit-input-placeholder{
+                    color: $white-color;
+                }
+                &::-moz-input-placeholder{
+                    color: $white-color;
+                }
+                &::-o-input-placeholder{
+                    color: $white-color;
+                }
+            }
+            input {
+                @include prefixer(border-radius, 15px);
+                height: 40px;
+                color: $btn-form-color;
+            }
+            textarea {
+                @include prefixer(border-radius, 15px);
+                color: $btn-form-color;
+                height: 15rem;
+            }
+        }
+        .form-control-msg {
+            display: none;
+        }
+        .has-error {
+            .form-control-msg {
+                display: block;
+            }
+        }
+        
+        .js-show-feedback {
+            display: block;
+        }
+    }
+}
+/***  END CONTACT FORM   ***/
