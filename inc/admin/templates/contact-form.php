@@ -22,6 +22,6 @@
 			<h5 class="text-success form-control-msg js-form-success">Message Successfully submitted <i class="fas fa-check"></i></h5>
 			<h5 class="text-danger form-control-msg js-form-error">There was a problem with the Contact Form, please try again!</h5>
 		</div>
-
+		
 	</form>
 </div>

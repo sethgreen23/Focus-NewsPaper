@@ -28,9 +28,9 @@
 			endif;
         ?>
     </head>
-    <!-- Start Body -->
+<!-- Start Body -->
     <body <?php body_class(); ?>>
-        <!-- Start Uppernav  -->
+<!-- Start Uppernav  -->
         <nav class="navbar navbar-expand-lg upper-nav">
             <div class="navbar-brand">
                 <i class="far fa-calendar-alt"></i>
@@ -41,12 +41,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <?php foucs_nav_custom_upper_menu() ?>
             </div>
-        </nav>
-        <!-- End Uppernav  -->
-        <!-- Start container-fluid Header  -->
+        </nav><!-- End Uppernav  -->
+<!-- Start container-fluid Header  -->
             <div class="container-fluid">
                 <div class="row">
-                    <!-- Start Header Logo  -->
+ <!-- Start Header Logo  -->
                     <div class="col-6">
                         <div class="header-container background-image">
                             <div class="foucs-logo">
@@ -54,9 +53,8 @@
                                 <h5 class="desc-site text-capitalize text-center"><?php bloginfo( 'description' ); ?></h5>
                             </div><!-- foucs-logo -->
                         </div>
-                    </div>
-                    <!-- End Header Logo  -->
-                    <!-- Start ADS block  -->
+                    </div><!-- End Header Logo  -->
+<!-- Start ADS block  -->
                     <div class="col-6">
                         <div class="foucs-ads">
                             <a href="<?php esc_url(home_url('/')) ?>">
@@ -65,9 +63,8 @@
                         </div><!-- foucs-ads -->
                     </div><!-- End Start ADS block  -->
                 </div><!-- End row -->
-            </div>
-        <!-- End container-fluid Header  -->
-        <!-- Start Theme nav  -->
+            </div><!-- End container-fluid Header  -->
+<!-- Start Theme nav  -->
         <nav class="navbar navbar-expand-lg second-nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -76,5 +73,4 @@
                 <?php foucs_nav_custom_theme_menu() ?>
             </div>
             <?php get_search_form()?>
-        </nav>
-        <!-- End Theme nav  -->
+        </nav><!-- End Theme nav  -->

@@ -7,6 +7,18 @@
     ===============================
 */
 
+function foucs_newspaper_teamplate_pages_hierarchy() {
+    if (is_page('contact')) {
+        get_template_part( 'template-parts/pages/contact');
+    } elseif (is_page('about')) {
+        get_template_part( 'template-parts/pages/about');
+    } else {
+        get_template_part('template-parts/pages/default-page');
+    }
+}
+
+
+
 function foucs_check_post_image() {
 
     $img_link = get_template_directory_uri() . '/img/default-image-rc.jpg';

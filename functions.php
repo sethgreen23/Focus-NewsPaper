@@ -10,6 +10,7 @@
     require get_template_directory() . '/inc/admin/admin-theme-option.php';
     require get_template_directory() . '/inc/admin/theme-shortcode.php';
 
+
     // Theme File
     require get_template_directory() . '/inc/theme-file/enqueue-theme.php';
     require get_template_directory() . '/inc/theme-file/functions-theme.php';

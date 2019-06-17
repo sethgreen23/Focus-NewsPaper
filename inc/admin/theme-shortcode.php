@@ -8,7 +8,7 @@
 		SHORTCODE OPTIONS
 	========================
 */
-function anubis_contact_form_shortcode( $atts, $content = null ) {
+function foucs_contact_form_shortcode( $atts, $content = null ) {
 	
 	//[contact_form]
 	
@@ -25,4 +25,4 @@ function anubis_contact_form_shortcode( $atts, $content = null ) {
 	return ob_get_clean();
 	
 }
-add_shortcode( 'contact_form', 'anubis_contact_form_shortcode' );
+add_shortcode( 'contact_form', 'foucs_contact_form_shortcode' );

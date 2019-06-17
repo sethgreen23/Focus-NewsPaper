@@ -15,6 +15,7 @@
 			type="text" 
 			class="input-search" 
 			name="s" 
+			placeholder="Search"
 			value="<?php echo esc_attr( get_search_query() ); ?>" 
 			id="s" /><a class="icon-search" href="#"><i class="fas fa-search"></i></a>
 	</form>
