@@ -50,10 +50,10 @@ function foucs_contact_custom_post_type() {
 
 function foucs_set_contact_columns( $columns ){
 	$newColumns = array();
-	$newColumns['title'] = 'Full Name';
+	$newColumns['title']   = 'Full Name';
 	$newColumns['message'] = 'Message';
-	$newColumns['email'] = 'Email';
-	$newColumns['date'] = 'Date';
+	$newColumns['email']   = 'Email';
+	$newColumns['date']    = 'Date';
 	return $newColumns;
 }
 

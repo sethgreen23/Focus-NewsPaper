@@ -31,22 +31,22 @@
 <!-- Start Body -->
     <body <?php body_class(); ?>>
 <!-- Start Uppernav  -->
-        <nav class="navbar navbar-expand-lg upper-nav">
+        <nav class="navbar navbar-expand-lg">
             <div class="navbar-brand">
                 <i class="far fa-calendar-alt"></i>
                 <span class="date"><?php echo date('F j, Y'); ?></span>
                 <i class="far fa-clock"></i>
                 <span id="timeNow" class="clock"></span>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse upper-nav">
                 <?php foucs_nav_custom_upper_menu() ?>
             </div>
         </nav><!-- End Uppernav  -->
 <!-- Start container-fluid Header  -->
-            <div class="container-fluid">
+            <div class="container-fluid m-head">
                 <div class="row">
  <!-- Start Header Logo  -->
-                    <div class="col-6">
+                    <div class="col-sm-12 col-6">
                         <div class="header-container background-image">
                             <div class="foucs-logo">
                                 <?php the_custom_logo();?>
@@ -55,7 +55,7 @@
                         </div>
                     </div><!-- End Header Logo  -->
 <!-- Start ADS block  -->
-                    <div class="col-6">
+                    <div class="col-sm-12 col-6">
                         <div class="foucs-ads">
                             <a href="<?php esc_url(home_url('/')) ?>">
                                 <img src="<?php echo get_template_directory_uri() . '/image/foucs2.png' ?>" alt="Foucs News Paper Theme ads">
@@ -65,11 +65,11 @@
                 </div><!-- End row -->
             </div><!-- End container-fluid Header  -->
 <!-- Start Theme nav  -->
-        <nav class="navbar navbar-expand-lg second-nav">
+        <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse second-nav" id="navbarNav">
                 <?php foucs_nav_custom_theme_menu() ?>
             </div>
             <?php get_search_form()?>

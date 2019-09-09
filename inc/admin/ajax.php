@@ -9,12 +9,12 @@ function foucs_save_contact_form_message() {
 	$message = wp_strip_all_tags( $_POST['message']);
 
 	$contact_info_args = array(
-	        'post_title' => $title,
-	        'post_content' => $message,
-	        'post_author' => 1,
-	        'post_status' => 'publish',
-	        'post_type' => 'foucs-contact',
-	        'meta_input' => array(
+	        'post_title' 	=> $title,
+	        'post_content'  => $message,
+	        'post_author' 	=> 1,
+	        'post_status' 	=> 'publish',
+	        'post_type' 	=> 'foucs-contact',
+	        'meta_input' 	=> array(
 	            '_contact_email_value_key' => $email,
 	     	),
 	);

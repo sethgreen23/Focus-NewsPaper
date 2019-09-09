@@ -1,0 +1,94 @@
+//- START NAVIGATIONS
+.navbar {
+    background-color: $primary_color;
+    margin-bottom: 1em;
+    @include MediaQuery(phone) {
+        padding: 1em;
+    }
+    .navbar-brand {
+    	color: $white-color;
+		font-family: $main-font;
+        @include MediaQuery(phone) {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+		i {
+			color: $secondary_color;
+		}
+		.date {
+			margin-right: 5px;
+		}
+    }
+    .navbar-toggler {
+        background-color: $white-color;
+        .navbar-toggler-icon {
+            background-color: $primary_color;
+        }
+    }
+    //- START UPPER NAV
+    .upper-nav,
+    .second-nav {
+    	.navbar-nav {
+    		.nav-item {
+    			font-family: $main-font;
+			    font-size: 16px;
+			    font-weight: 600;
+			    .nav-link {
+			    	color: $white-color;
+			    	@include prefixer (transition, all 0.2s);
+			    	&:hover {
+	                    color: $secondary_color;
+	                    @include prefixer (transition, all 0.2s);
+	                }
+			    }
+    		}
+    	}
+    }
+    //- END UPPER NAV
+
+    //- START SECOND NAV
+    .second-nav {
+    	.navbar-nav {
+    		.dropdown {
+                @include prefixer(border-radius, 0);
+                @include prefixer(border, 0);
+            }
+            .dropdown-toggle {
+                &::after {
+                    vertical-align: 2px;
+                    margin-left: 4px;
+                }
+            }
+            .dropdown-menu {
+                background: $primary_color;
+                @include prefixer(border, 0);
+                top: 80%;
+                @include prefixer(border-radius, 0px 0px 5px 5px);
+                padding: 10px 0;
+                //-@include prefixer(box-shadow, 1px 1px 5px $white-color);
+                &:last-child {
+                    padding: 2px 0;
+                }
+                a {
+                    color: $white-color;
+                    font-family: $main-font;
+                    font-weight: 600;
+                    font-size: 17px;
+                    @include prefixer(border-bottom, 1px solid $white-color);
+                    &:last-child {
+                        @include prefixer(border-bottom, none);
+                    }
+                }
+                .dropdown-item {
+                    padding: 3px 1.2rem;
+                    &:hover {
+                        background: $secondary_color;
+                        color: $primary_color;
+                    }
+                }
+            }
+    	}
+    }
+}

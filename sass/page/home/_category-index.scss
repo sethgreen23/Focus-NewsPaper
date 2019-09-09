@@ -77,6 +77,18 @@
                         color: $secondary_color;
                         @include prefixer (transition, all 0.3s);
                     }
+                    @include MediaQuery(xxlg-desktop) {
+                        font-size: 19px;
+                    }
+                    @include MediaQuery(xlg-desktop) {
+                        font-size: 19px;
+                    }
+                    @include MediaQuery(lg-desktop) {
+                        font-size: 19px;
+                    }
+                    @include MediaQuery(desktop) {
+                        font-size: 17px;
+                    }
                 }
             }
             .category-index-content {

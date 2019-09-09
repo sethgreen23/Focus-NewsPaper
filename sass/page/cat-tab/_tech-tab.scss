@@ -154,6 +154,15 @@
                             @include prefixer (transition, all 0.3s);
                         }
                     }
+                    @include MediaQuery(xxlg-desktop) {
+                        margin-top: 10px;
+                    }
+                    @include MediaQuery(xlg-desktop) {
+                            margin-top: 10px;
+                    }
+                    @include MediaQuery(lg-desktop) {
+                            margin-top: 10px;
+                    }
                 }
                 .tech-index-content {
                     position: absolute;

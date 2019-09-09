@@ -1,30 +1,4 @@
 jQuery(document).ready( function($){
-	
-	/*$('.upper-silder').owlCarousel({
-        items:2,
-        loop:true,
-        margin:3,
-        nav: true,
-        dots: false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        animateOut: true,
-        animateIn: true,
-    });
-
-    $('.down-silder').owlCarousel({
-        items:3,
-        loop:true,
-        margin:3,
-        nav: false,
-        dots: false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        animateOut: 'fadeOut',
-        animateIn: true,
-    });*/
 
     $('.upper-silder').slick({
         slidesToShow: 2,
@@ -32,8 +6,31 @@ jQuery(document).ready( function($){
         asNavFor: '.down-silder',
         arrows: false,
         mobileFirst: true,
-       /* autoplay: true,
-        autoplaySpeed: 3000,*/
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+        ]
      });
      $('.down-silder').slick({
       slidesToShow: 3,
@@ -43,9 +40,32 @@ jQuery(document).ready( function($){
       prevArrow:'.arrow-prev',
       nextArrow:'.arrow-next',
       mobileFirst: true,
-      /* autoplay: true,
-        autoplaySpeed: 3000,*/
-      
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+      ]
     });
 
     $('.cats-carousel').slick({
@@ -54,8 +74,38 @@ jQuery(document).ready( function($){
         asNavFor: false,
         arrows: false,
         mobileFirst: true,
-       /* autoplay: true,
-        autoplaySpeed: 3000,*/
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+      ]
      });
 
     $('.latest-news').easyTicker({
@@ -107,8 +157,38 @@ jQuery(document).ready( function($){
       asNavFor: false,
       arrows: false,
       mobileFirst: true,
-     /* autoplay: true,
-      autoplaySpeed: 3000,*/
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+      ]
    });
 
   

@@ -102,6 +102,15 @@
                     margin-right: 5px;
                     font-weight: 400;
                 }
+                @include MediaQuery(xxlg-desktop) {
+                    margin-left: 9.55em;
+                }
+                @include MediaQuery(xlg-desktop) {
+                    margin-left: 9.55em;
+                }
+                @include MediaQuery(lg-desktop) {
+                    margin-left: 9.55em;
+                }
             }
             .post-comment {
                 margin-left: 13.85em;
@@ -117,11 +126,29 @@
                         }
                     }
                 }
+                @include MediaQuery(xxlg-desktop) {
+                    margin-left: 17.85em;
+                }
+                @include MediaQuery(xlg-desktop) {
+                    margin-left: 17.85em;
+                }
+                @include MediaQuery(lg-desktop) {
+                    margin-left: 17.85em;
+                }
             }
             .post-view {
                 margin-left: 20.3em;
                 i {
                     color: $icon_slid_view;
+                }
+                @include MediaQuery(xxlg-desktop) {
+                    margin-left: 26.75em;
+                }
+                @include MediaQuery(xlg-desktop) {
+                    margin-left: 26.75em;
+                }
+                @include MediaQuery(lg-desktop) {
+                    margin-left: 26.75em;
                 }
             }
             .post-content {

@@ -8,7 +8,7 @@
     <div class="single-carousel">
         <?php
             $single_sider_args = array (
-                'post_per_page' => 8, // Number Posts Show
+                'post_per_page' => 1, // Number Posts Show
                 'orderbay'      => 'rand', // Ordring by Rand
                 'post__not_in'  => array(get_queried_object_id()), //ID Post
                 'post_status'    => 'publish'

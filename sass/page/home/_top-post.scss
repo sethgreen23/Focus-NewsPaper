@@ -208,6 +208,9 @@
                                     color: $secondary_color;
                                     @include prefixer (transition, all 0.3s);
                                 }
+                                @include MediaQuery(desktop) {
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }

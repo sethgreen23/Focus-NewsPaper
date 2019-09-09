@@ -241,6 +241,21 @@
         background: none;
         cursor: pointer;
         left: 72.5em;
+         @include MediaQuery(xxlg-desktop) {
+                left: 106.5em;
+         }
+         @include MediaQuery(xlg-desktop) {
+                left: 77.5em;
+         }
+         @include MediaQuery(lg-desktop) {
+                left: 67.5em;
+         }
+         @include MediaQuery(desktop) {
+                left: 55.5em;
+         }
+         @include MediaQuery(phone) {
+                display: none !important;
+         }
         i {
             font-size: 3rem;
             color: $primary_color;
