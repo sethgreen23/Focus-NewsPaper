@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="row">
                     <div class="top-post-one">
-                            <div class="col-sm-12 col-6">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
 <!--- Start top-post-one-body --->
                                 <div class="top-post-one-body">
 <!--- Start post-img-top --->
@@ -75,7 +75,7 @@
     ?>
 <!--- Start top-all-post --->
                         <div class="top-all-post">
-                            <div class="col-sm-12 col-6">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
                                 <ul>
                                     <?php
                                         $top_post_all = (array(

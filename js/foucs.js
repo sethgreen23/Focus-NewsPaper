@@ -24,7 +24,7 @@ jQuery(document).ready( function($){
             }
           },
           {
-            breakpoint: 991,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -54,14 +54,21 @@ jQuery(document).ready( function($){
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
             slidesToScroll: 1,
           }
         },
@@ -99,7 +106,7 @@ jQuery(document).ready( function($){
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -182,7 +189,7 @@ jQuery(document).ready( function($){
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,

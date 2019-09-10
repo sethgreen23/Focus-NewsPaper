@@ -2,7 +2,7 @@
 <div class="category-index">
     <div class="row">
 <!-- Start Left articals-cat-body col-6 --->
-        <div class="articals-cat-body col-sm-12 col-6">
+        <div class="articals-cat-body col-sm-12 col-md-12 col-lg-6">
             <div class="artical-name-one">
                 <span class="cat-one text-uppercase">life</span>
             </div>
@@ -67,7 +67,7 @@
             </div><!-- End body-category-index --->
         </div><!-- End Left articals-cat-body col-6 --->
 <!-- Start Right articals-cat-body col-6 --->
-        <div class="articals-cat-body col-sm-12 col-6">
+        <div class="articals-cat-body col-sm-12 col-md-12 col-lg-6">
             <div class="artical-name-two">
                 <span class="cat-two text-uppercase">travel</span>
             </div>

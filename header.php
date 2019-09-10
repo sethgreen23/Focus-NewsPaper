@@ -46,7 +46,7 @@
             <div class="container-fluid m-head">
                 <div class="row">
  <!-- Start Header Logo  -->
-                    <div class="col-sm-12 col-6">
+                    <div class="col-sm-12 col-md-6">
                         <div class="header-container background-image">
                             <div class="foucs-logo">
                                 <?php the_custom_logo();?>
@@ -55,7 +55,7 @@
                         </div>
                     </div><!-- End Header Logo  -->
 <!-- Start ADS block  -->
-                    <div class="col-sm-12 col-6">
+                    <div class="col-sm-12 col-md-6">
                         <div class="foucs-ads">
                             <a href="<?php esc_url(home_url('/')) ?>">
                                 <img src="<?php echo get_template_directory_uri() . '/image/foucs2.png' ?>" alt="Foucs News Paper Theme ads">

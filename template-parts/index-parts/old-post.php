@@ -22,7 +22,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="old-one">
-                            <div class="col-sm-12 col-6">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
                                 <!--- Start old-one-body --->
                                 <div class="old-one-body">
 <!--- Start post-img-old --->
@@ -72,7 +72,7 @@
         wp_reset_query();
     ?>
                         <div class="all-old">
-                            <div class="col-sm-12 col-6">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
                                 <ul>
                                     <?php
                                         $ordring_date_args_all = (array(
