@@ -111,7 +111,7 @@ class Foucs_youtube_channel_Widget extends WP_Widget {
             if ($title) echo $before_title . $title . $after_title;?>
 
             <div 
-                class="g-ytsubscribe" 
+                class="g-ytsubscribe you-style" 
                 data-channelid="<?php echo $channel ?>" 
                 data-channel="<?php echo $channel ?>" 
                 data-layout="<?php echo $layout?>" 

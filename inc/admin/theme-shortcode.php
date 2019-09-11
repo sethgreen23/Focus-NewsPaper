@@ -34,11 +34,13 @@ function foucs_mail_box_shortcode( $atts, $content = null ) {
 
 	//return HTML
 	ob_start();?>
-	<div class="mail-box">
+	<div class="mail-box col-6 d-inline-block">
 		<div class="card">
 		  <div class="card-body">
-		  	<i class="fas fa-search"></i>
-		    <h5 class="card-title">Special</h5>
+		    <div class="card-title d-inline-block position-relative text-center w-100">
+		    	<i class="far fa-envelope"></i>
+		    	 <span>Special</span>
+		    </div>
 		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
 		  </div>
 		</div>
@@ -55,11 +57,13 @@ function foucs_phone_box_shortcode( $atts, $content = null ) {
 
 	//return HTML
 	ob_start();?>
-	<div class="phone-box">
+	<div class="phone-box col-6 d-inline-block">
 		<div class="card">
 		  <div class="card-body">
-		  	<i class="fas fa-search"></i>
-		    <h5 class="card-title">Special</h5>
+		  	<div class="card-title d-inline-block position-relative text-center w-100">
+		    	<i class="far fa-envelope"></i>
+		    	 <span>Special</span>
+		    </div>
 		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
 		  </div>
 		</div>
@@ -77,11 +81,13 @@ function foucs_adress_box_shortcode( $atts, $content = null ) {
 
 	//return HTML
 	ob_start();?>
-	<div class="adress-box">
+	<div class="adress-box col-6 d-inline-block">
 		<div class="card">
 		  <div class="card-body">
-		  	<i class="fas fa-search"></i>
-		    <h5 class="card-title">Special</h5>
+		  	<div class="card-title d-inline-block position-relative text-center w-100">
+		    	<i class="far fa-envelope"></i>
+		    	 <span>Special</span>
+		    </div>
 		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
 		  </div>
 		</div>
@@ -119,8 +125,10 @@ function foucs_list_shortcode( $atts, $content = null ) {
 	<div class="list">
 		<ul class="unstyle">
 		  <li class="card-body">
-		  	<i class="fas fa-search"></i>
-		    <?php echo '<p class="list-text">' .$content.'</p>' ?>
+		  	<div class="list-cont d-inline-block position-relative text-center w-100">
+		  		<i class="fas fa-search"></i>
+		    	<?php echo '<p class="list-text">' .$content.'</p>' ?>
+		  	</div>
 		  </li>
 		</ul>
 	</div>
@@ -128,5 +136,5 @@ function foucs_list_shortcode( $atts, $content = null ) {
 	return ob_get_clean();
 	
 }
-add_shortcode( 'list', 'foucs_list_shortcode' );
+add_shortcode( 'list', 'foucs_list_shortcode');
 

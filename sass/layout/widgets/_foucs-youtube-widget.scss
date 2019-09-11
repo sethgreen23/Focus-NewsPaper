@@ -2,8 +2,11 @@
 .foucs-newspaper-sidebar {
     .foucs_youtube_channel_widget {
         >div {
-            text-align: center !important;
-            position: relative !important;
+            position: sticky !important;
+        }
+        #___ytsubscribe_0 {
+            /*text-align: center !important;*/
+            position: sticky !important;
             width: 251px !important;
             height: 70px !important;
             overflow: hidden !important;
@@ -11,6 +14,8 @@
             @include prefixer (border-radius, 5px);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
             iframe {
+                position: sticky !important;
+                width: 100% !important;
                 margin-top: 15px !important;
             }
         }

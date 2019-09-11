@@ -2,11 +2,11 @@
 .foucs-newspaper-sidebar {
     .foucs_facebook_page_widget {
         .fb-page {
-            @include prefixer (border, 1px solid $border_color);
+           /* @include prefixer (border, 1px solid $border_color);
             @include prefixer (border-radius, 5px);
             @include prefixer (box-shadow, 1px 1px 3px 1px $box-shadow);
             width: 16em;
-            overflow: hidden;
+            overflow: hidden;*/
         }
     }
 }
