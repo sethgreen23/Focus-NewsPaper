@@ -6,7 +6,7 @@ The Theme Not Responsive
 Version:  1.0.0
 
 ## Author:
-Hesham Adel ( [@FaceBook](https://www.facebook.com/Hesham.H.Adel) / [Linked-In](https://www.linkedin.com/in/heshamadel000) )
+Hesham Adel ( [FaceBook](https://www.facebook.com/Hesham.H.Adel) / [Linked-In](https://www.linkedin.com/in/heshamadel000) )
 
 
 ## License
