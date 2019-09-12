@@ -92,6 +92,16 @@ function foucs_newspaper_add_submenu(){
         'foucs_create_admin_custom_css', // Name Function To Called To Output The Content Page
     );
 
+     // Add Theme Contact Us Page 
+    add_submenu_page( 
+        $name_page_slug,
+        'Foucs Newspaper Admin Contact', 
+        'Contact Us', // Sub Menu Title
+        'manage_options', 
+        'foucs-newspaper-contact', // Sulg Name Page
+        'foucs_create_admin_contact_us', // Name Function To Called To Output The Content Page
+    );
+
 }
 
 // Action To Add SubMenu Admin Page
@@ -169,12 +179,12 @@ function foucs_newspaper_custom_settings() {
     /*** Start Custom Css ***/
 
     // Custome CSS Options
-    //Custom CSS Options
 	register_setting( 'foucs-custom-css-options', 'foucs_css', 'foucs_sanitize_custom_css' );
 	
 	add_settings_section( 'foucs-custom-css-section', 'Custom CSS', 'foucs_custom_css_section_callback', 'foucs-newspaper-custom-css' );
 	
 	add_settings_field( 'custom-css', 'Insert your Custom CSS', 'foucs_custom_css_callback', 'foucs-newspaper-custom-css', 'foucs-custom-css-section' );
+
 }
 // Function Callback Submenu
 function foucs_create_admin_info_page () {
@@ -355,6 +365,10 @@ function foucs_custom_css_callback() {
 	$css = get_option( 'foucs_css' );
 	$css = ( empty($css) ? '/* Foucs NewsPaper Custom CSS */' : $css );
 	echo '<div id="customCss">'.$css.'</div><textarea id="foucs_css" name="foucs_css" style="display:none;visibility:hidden;">'.$css.'</textarea>';
+}
+
+function foucs_create_admin_contact_us() {
+    require_once (get_template_directory() . '/inc/admin/templates/foucs-contact-us.php');
 }
 
 // Sanitization Settings

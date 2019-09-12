@@ -39,9 +39,9 @@ function foucs_mail_box_shortcode( $atts, $content = null ) {
 		  <div class="card-body">
 		    <div class="card-title d-inline-block position-relative text-center w-100">
 		    	<i class="far fa-envelope"></i>
-		    	 <span>Special</span>
+		    	 <span>E-Mail</span>
 		    </div>
-		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
+		    	<?php echo '<div class="card-text text-center">' .$content.'</div>' ?>
 		  </div>
 		</div>
 	</div>
@@ -61,10 +61,10 @@ function foucs_phone_box_shortcode( $atts, $content = null ) {
 		<div class="card">
 		  <div class="card-body">
 		  	<div class="card-title d-inline-block position-relative text-center w-100">
-		    	<i class="far fa-envelope"></i>
-		    	 <span>Special</span>
+		    	<i class="fas fa-phone"></i>
+		    	 <span>Phone</span>
 		    </div>
-		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
+		    	<?php echo '<div class="card-text text-center">' .$content.'</div>' ?>
 		  </div>
 		</div>
 	</div>
@@ -85,10 +85,10 @@ function foucs_adress_box_shortcode( $atts, $content = null ) {
 		<div class="card">
 		  <div class="card-body">
 		  	<div class="card-title d-inline-block position-relative text-center w-100">
-		    	<i class="far fa-envelope"></i>
-		    	 <span>Special</span>
+		    	<i class="fas fa-map-marker-alt"></i>
+		    	 <span>Adress</span>
 		    </div>
-		    	<?php echo '<div class="card-text">' .$content.'</div>' ?>
+		    	<?php echo '<div class="card-text text-center">' .$content.'</div>' ?>
 		  </div>
 		</div>
 	</div>
@@ -105,7 +105,8 @@ function foucs_spot_liner_shortcode( $atts, $content = null ) {
 
 	//return HTML
 	ob_start();?>
-	<div class="text-color">
+	<div class="text-color d-inline-block" style="background-color: aqua">
+		
 		<?php echo '<div class="spot-liner">' .$content.'</div>' ?>
 	</div>
  <?php
@@ -125,9 +126,8 @@ function foucs_list_shortcode( $atts, $content = null ) {
 	<div class="list">
 		<ul class="unstyle">
 		  <li class="card-body">
-		  	<div class="list-cont d-inline-block position-relative text-center w-100">
-		  		<i class="fas fa-search"></i>
-		    	<?php echo '<p class="list-text">' .$content.'</p>' ?>
+		  	<div class="list-cont">
+		    	<?php echo '<p class="list-text"><i class="fas fa-angle-double-right"></i>' .$content.'</p>' ?>
 		  	</div>
 		  </li>
 		</ul>

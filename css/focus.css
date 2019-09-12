@@ -6113,6 +6113,9 @@ img {
 .footer-section .end-footer .navigat {
   line-height: 5px;
 }
+.footer-section .end-footer .navigat .navbar {
+  background: #181818;
+}
 .footer-section .end-footer .navigat .footer-nav .navbar-nav .nav-item {
   margin-right: 5px;
 }

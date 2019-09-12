@@ -29,6 +29,9 @@
         }
         .navigat {
             line-height: 5px;
+            .navbar {
+                background: $end_footer_color;
+            }
             .footer-nav {
                 .navbar-nav {
                     .nav-item {

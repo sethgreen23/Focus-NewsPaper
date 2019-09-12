@@ -9,7 +9,7 @@
 
 function foucs_newspaper_load_admin_scripts( $hook ){
 	//echo $hook;
-	if( 'toplevel_page_foucs_newspaper' == $hook ){ 
+	if('foucs-newspaper_page_foucs-newspaper-contact' == $hook ){ 
 	
 		wp_register_style( 'foucs_admin_css', get_template_directory_uri() . '/css/admin/foucs.admin.css', array(), '1.0.0', 'all' );
 		wp_enqueue_style( 'foucs_admin_css' );

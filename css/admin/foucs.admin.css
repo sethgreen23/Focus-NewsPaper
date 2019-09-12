@@ -1,68 +1,19 @@
 /*
 @package foucs_newspaper
 */
-.foucs-newspaper-preview {
+.con-info ul li {
+  margin: 2em auto;
+}
+.con-info ul li h3 {
   display: inline-block;
-  float: right;
-  width: 280px;
-  padding: 20px;
-  text-align: center;
-  margin-right: 20px;
+  margin: auto 10px;
 }
-.foucs-newspaper-preview .foucs-admin-info {
-  display: block;
-  text-align: center;
-}
-.foucs-newspaper-preview .foucs-admin-info .image-container {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-.foucs-newspaper-preview .foucs-admin-info .image-container .admin-profile-picture {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  margin: 20px auto;
-  -webkit-background-position: center center;
-  -moz-background-position: center center;
-  -o-background-position: center center;
-  background-position: center center;
-  -webkit-background-repeat: no-repeat;
-  -moz-background-repeat: no-repeat;
-  -o-background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.foucs-newspaper-preview .foucs-admin-info h1.foucs-username,
-.foucs-newspaper-preview .foucs-admin-info h2.foucs-description {
+.con-info ul li h3 a {
+  text-decoration: none;
   color: #222f3e;
 }
-.foucs-newspaper-preview .foucs-admin-info h1.foucs-username {
-  font-size: 24px;
-  margin: 0 0 10px;
-}
-.foucs-newspaper-preview .foucs-admin-info h2.foucs-description {
-  font-size: 13px;
-  margin: 0 0 20px;
-}
-.foucs-newspaper-preview .foucs-admin-info .icons-wrapper .youtube,
-.foucs-newspaper-preview .foucs-admin-info .icons-wrapper .pinterest {
-  font-size: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-  content: "/f26e";
-}
-
-.foucs-general-form {
-  display: inline-block;
+.con-info ul li h3 a:hover {
+  color: #ff9900;
 }
 
 /*# sourceMappingURL=foucs.admin.css.map */

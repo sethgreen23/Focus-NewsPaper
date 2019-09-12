@@ -7,55 +7,21 @@
 //- File Mixin
 @import "help/mixins";
 
-.foucs-newspaper-preview {
-    display: inline-block; 
-    float: right;
-    width: 280px; 
-    padding: 20px; 
-    text-align: center; 
-    margin-right: 20px; 
-    .foucs-admin-info { 
-        display: block; 
-        text-align: center;
-        .image-container { 
-            display: block; 
-            width: 100%; 
-            overflow: hidden; 
-            text-align: center;
-            .admin-profile-picture { 
-                width: 150px; 
-                height: 150px; 
-                overflow: hidden; 
-                @include prefixer(border-radius, 50%);
-                margin: 20px auto; 
-                @include prefixer(background-position,center center);
-                @include prefixer(background-repeat,no-repeat);
-                @include prefixer(background-size,cover);
-            }
-        }
-        h1.foucs-username,
-        h2.foucs-description { 
-            color: $primary_color; 
-        }
-        h1.foucs-username { 
-            font-size: 24px; 
-            margin: 0 0 10px; 
-        }
-        h2.foucs-description { 
-            font-size: 13px; 
-            margin: 0 0 20px; 
-        }
-        .icons-wrapper {
-            .youtube,
-            .pinterest {
-                font-size: 20px;
-                margin-right: 5px;
-                margin-left: 5px;
-                content: '/f26e',
-            }
+.con-info {
+    ul {
+        li {
+           margin: 2em auto;
+           h3 {
+                display: inline-block; 
+                margin: auto 10px;
+                a {
+                    text-decoration: none;
+                    color: $primary_color;
+                    &:hover {
+                        color: $secondary_color;
+                    }
+                }
+           }
         }
     }
-}
-.foucs-general-form { 
-    display: inline-block; 
 }
