@@ -29,7 +29,8 @@
     }
     //- START UPPER NAV
     .upper-nav,
-    .second-nav {
+    .second-nav,
+    .author-nav {
     	.navbar-nav {
     		.nav-item {
     			font-family: $main-font;
@@ -49,7 +50,8 @@
     //- END UPPER NAV
 
     //- START SECOND NAV
-    .second-nav {
+    .second-nav,
+    .author-nav {
     	.navbar-nav {
     		.dropdown {
                 @include prefixer(border-radius, 0);

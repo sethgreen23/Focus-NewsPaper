@@ -38,7 +38,7 @@
                 position: absolute;
                 height: 100%;
                 width: 3px;
-                top: 0;
+                top: 16px;
                 left: 46px;
                 background-color: $primary_color;
             }
@@ -71,7 +71,7 @@
                         height: 100px;
                         position: absolute;
                         z-index: 107;
-                        margin-left: -9em;
+                        margin-left: -16.5em;
                         @include prefixer (border, 1px solid $primary_color);
                         @include prefixer (border-radius, 4px);
                         @include prefixer (box-shadow, 0 1px 2px $box-shadow);
