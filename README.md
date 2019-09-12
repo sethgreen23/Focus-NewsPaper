@@ -1,6 +1,6 @@
 # Focus-NewsPaper
 Focus NewsPaper / A Clean Wordpress Magazine
-*** The Theme Not Responsive***
+The Theme Not Responsive
 
 Version:  1.0.0
 
